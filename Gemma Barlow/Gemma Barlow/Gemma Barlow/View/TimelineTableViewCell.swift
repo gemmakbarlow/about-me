@@ -25,7 +25,7 @@ class TimelineTableViewCell: UITableViewCell {
     
     func configureCellWithEmployerData(year: String, title: String, imageName: String, color: UIColor) {
         employerImageView.image = UIImage(named: imageName)
-         employerImageView.layer.cornerRadius = 10.0
+         employerImageView.layer.cornerRadius = 8.0
         employerImageView.clipsToBounds = true
         
         employerTitleLabel.text = title

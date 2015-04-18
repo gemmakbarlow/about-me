@@ -9,9 +9,9 @@
 import UIKit
 
 private let timelineData = [
-    ["2014-", "Harry's", "harrys", UIColor.tealColor()],
+    ["2014 -", "Harry's", "harrys", UIColor.tealColor()],
     ["2013", "Couchsurfing", "couchsurfing", UIColor.oceanBlueColor()],
-    ["2011", "Lonely Planet / BBC Worldwide", "lonely-planet", UIColor.mauveColor()],
+    ["2011", "Lonely Planet - BBC", "lonely-planet", UIColor.mauveColor()],
     ["2009", "Intunity", "westfield", UIColor.paleYellowColor()]
 ]
 
