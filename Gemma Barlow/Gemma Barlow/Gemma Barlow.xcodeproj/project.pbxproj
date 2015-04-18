@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */; };
+		A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */; };
+		A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */; };
+		A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */; };
+		A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCAF1AE27C1E004CC664 /* TimelineViewController.swift */; };
+		A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB11AE27C1E004CC664 /* Main.storyboard */; };
+		A7FBFCB51AE27C1E004CC664 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB41AE27C1E004CC664 /* Images.xcassets */; };
+		A7FBFCB81AE27C1E004CC664 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB61AE27C1E004CC664 /* LaunchScreen.xib */; };
+		A7FBFCC41AE27C1E004CC664 /* Gemma_BarlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCC31AE27C1E004CC664 /* Gemma_BarlowTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7FBFCBE1AE27C1E004CC664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7FBFCA01AE27C1E004CC664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7FBFCA71AE27C1E004CC664;
+			remoteInfo = "Gemma Barlow";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineTableViewCell.xib; path = View/TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineTableViewCell.swift; path = View/TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
+		A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gemma Barlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FBFCAC1AE27C1E004CC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7FBFCAF1AE27C1E004CC664 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		A7FBFCB21AE27C1E004CC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7FBFCB41AE27C1E004CC664 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A7FBFCB71AE27C1E004CC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A7FBFCBD1AE27C1E004CC664 /* Gemma BarlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gemma BarlowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FBFCC21AE27C1E004CC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FBFCC31AE27C1E004CC664 /* Gemma_BarlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gemma_BarlowTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7FBFCA51AE27C1E004CC664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7FBFCBA1AE27C1E004CC664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7E73C431AE2FB0C00DFB752 /* TimelineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBFCAF1AE27C1E004CC664 /* TimelineViewController.swift */,
+			);
+			name = TimelineViewController;
+			sourceTree = "<group>";
+		};
+		A7E73C441AE2FB1600DFB752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7E73C471AE2FB5600DFB752 /* TimelineTableViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7E73C451AE2FB1B00DFB752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A7E73C461AE2FB1F00DFB752 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A7E73C471AE2FB5600DFB752 /* TimelineTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */,
+				A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */,
+			);
+			name = TimelineTableViewCell;
+			sourceTree = "<group>";
+		};
+		A7E73C4C1AE30B3800DFB752 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A7FBFC9F1AE27C1E004CC664 = {
+			isa = PBXGroup;
+			children = (
+				A7FBFCAA1AE27C1E004CC664 /* Gemma Barlow */,
+				A7FBFCC01AE27C1E004CC664 /* Gemma BarlowTests */,
+				A7FBFCA91AE27C1E004CC664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7FBFCA91AE27C1E004CC664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */,
+				A7FBFCBD1AE27C1E004CC664 /* Gemma BarlowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7FBFCAA1AE27C1E004CC664 /* Gemma Barlow */ = {
+			isa = PBXGroup;
+			children = (
+				A7E73C4C1AE30B3800DFB752 /* Extensions */,
+				A7E73C461AE2FB1F00DFB752 /* Controller */,
+				A7E73C451AE2FB1B00DFB752 /* Model */,
+				A7E73C441AE2FB1600DFB752 /* View */,
+				A7E73C431AE2FB0C00DFB752 /* TimelineViewController */,
+				A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */,
+				A7FBFCB11AE27C1E004CC664 /* Main.storyboard */,
+				A7FBFCB41AE27C1E004CC664 /* Images.xcassets */,
+				A7FBFCB61AE27C1E004CC664 /* LaunchScreen.xib */,
+				A7FBFCAB1AE27C1E004CC664 /* Supporting Files */,
+			);
+			path = "Gemma Barlow";
+			sourceTree = "<group>";
+		};
+		A7FBFCAB1AE27C1E004CC664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBFCAC1AE27C1E004CC664 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7FBFCC01AE27C1E004CC664 /* Gemma BarlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBFCC31AE27C1E004CC664 /* Gemma_BarlowTests.swift */,
+				A7FBFCC11AE27C1E004CC664 /* Supporting Files */,
+			);
+			path = "Gemma BarlowTests";
+			sourceTree = "<group>";
+		};
+		A7FBFCC11AE27C1E004CC664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBFCC21AE27C1E004CC664 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7FBFCA71AE27C1E004CC664 /* Gemma Barlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7FBFCC71AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma Barlow" */;
+			buildPhases = (
+				A7FBFCA41AE27C1E004CC664 /* Sources */,
+				A7FBFCA51AE27C1E004CC664 /* Frameworks */,
+				A7FBFCA61AE27C1E004CC664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gemma Barlow";
+			productName = "Gemma Barlow";
+			productReference = A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7FBFCBC1AE27C1E004CC664 /* Gemma BarlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7FBFCCA1AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma BarlowTests" */;
+			buildPhases = (
+				A7FBFCB91AE27C1E004CC664 /* Sources */,
+				A7FBFCBA1AE27C1E004CC664 /* Frameworks */,
+				A7FBFCBB1AE27C1E004CC664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7FBFCBF1AE27C1E004CC664 /* PBXTargetDependency */,
+			);
+			name = "Gemma BarlowTests";
+			productName = "Gemma BarlowTests";
+			productReference = A7FBFCBD1AE27C1E004CC664 /* Gemma BarlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7FBFCA01AE27C1E004CC664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					A7FBFCA71AE27C1E004CC664 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A7FBFCBC1AE27C1E004CC664 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A7FBFCA71AE27C1E004CC664;
+					};
+				};
+			};
+			buildConfigurationList = A7FBFCA31AE27C1E004CC664 /* Build configuration list for PBXProject "Gemma Barlow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7FBFC9F1AE27C1E004CC664;
+			productRefGroup = A7FBFCA91AE27C1E004CC664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7FBFCA71AE27C1E004CC664 /* Gemma Barlow */,
+				A7FBFCBC1AE27C1E004CC664 /* Gemma BarlowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7FBFCA61AE27C1E004CC664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */,
+				A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */,
+				A7FBFCB81AE27C1E004CC664 /* LaunchScreen.xib in Resources */,
+				A7FBFCB51AE27C1E004CC664 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7FBFCBB1AE27C1E004CC664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7FBFCA41AE27C1E004CC664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */,
+				A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */,
+				A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */,
+				A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7FBFCB91AE27C1E004CC664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FBFCC41AE27C1E004CC664 /* Gemma_BarlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7FBFCBF1AE27C1E004CC664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7FBFCA71AE27C1E004CC664 /* Gemma Barlow */;
+			targetProxy = A7FBFCBE1AE27C1E004CC664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7FBFCB11AE27C1E004CC664 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7FBFCB21AE27C1E004CC664 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7FBFCB61AE27C1E004CC664 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7FBFCB71AE27C1E004CC664 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7FBFCC51AE27C1E004CC664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7FBFCC61AE27C1E004CC664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7FBFCC81AE27C1E004CC664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gemma Barlow/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7FBFCC91AE27C1E004CC664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gemma Barlow/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7FBFCCB1AE27C1E004CC664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gemma BarlowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gemma Barlow.app/Gemma Barlow";
+			};
+			name = Debug;
+		};
+		A7FBFCCC1AE27C1E004CC664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gemma BarlowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gemma Barlow.app/Gemma Barlow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7FBFCA31AE27C1E004CC664 /* Build configuration list for PBXProject "Gemma Barlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7FBFCC51AE27C1E004CC664 /* Debug */,
+				A7FBFCC61AE27C1E004CC664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7FBFCC71AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma Barlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7FBFCC81AE27C1E004CC664 /* Debug */,
+				A7FBFCC91AE27C1E004CC664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7FBFCCA1AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma BarlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7FBFCCB1AE27C1E004CC664 /* Debug */,
+				A7FBFCCC1AE27C1E004CC664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7FBFCA01AE27C1E004CC664 /* Project object */;
+}
