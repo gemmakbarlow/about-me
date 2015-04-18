@@ -8,6 +8,13 @@
 
 import UIKit
 
+private let timelineData = [
+    ["2014-", "Harry's", "harrys", UIColor.tealColor()],
+    ["2013", "Couchsurfing", "couchsurfing", UIColor.oceanBlueColor()],
+    ["2011", "Lonely Planet / BBC Worldwide", "lonely-planet", UIColor.mauveColor()],
+    ["2009", "Intunity", "westfield", UIColor.paleYellowColor()]
+]
+
 private let TimelineEstimatedCellHeight: CGFloat = 160.0
 
 
@@ -33,13 +40,21 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return timelineData.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(TimelineTableViewCell.cellIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(TimelineTableViewCell.cellIdentifier, forIndexPath: indexPath) as! TimelineTableViewCell
+
+        let data = timelineData[indexPath.row]
+        let year: String = data[0] as! String
+        let title: String = data[1] as! String
+        let imageName: String = data[2] as! String
+        let color: UIColor = data[3] as! UIColor
         
-        return cell as! UITableViewCell
+        cell.configureCellWithEmployerData(year, title: title, imageName: imageName, color: color)
+        
+        return cell
     }
     
     // MARK: - UITableViewDelegate

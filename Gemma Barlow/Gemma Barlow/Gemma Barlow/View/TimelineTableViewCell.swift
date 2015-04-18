@@ -21,10 +21,16 @@ class TimelineTableViewCell: UITableViewCell {
     }
     
     
-    // MARK: - Setup
+    // MARK: - Configuration
     
-    private func setupEmployerImageView() {
-        employerImageView.layer.cornerRadius = 4.0
+    func configureCellWithEmployerData(year: String, title: String, imageName: String, color: UIColor) {
+        employerImageView.image = UIImage(named: imageName)
+         employerImageView.layer.cornerRadius = 10.0
+        employerImageView.clipsToBounds = true
+        
+        employerTitleLabel.text = title
+        yearLabel.text = year
+        contentView.backgroundColor = color
     }
     
     
