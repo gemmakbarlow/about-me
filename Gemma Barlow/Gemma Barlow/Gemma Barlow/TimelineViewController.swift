@@ -10,7 +10,7 @@ import UIKit
 
 private let timelineData = [
     ["2014 -", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
-    ["2013", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.oceanBlueColor()],
+    ["2013", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.palePinkColor()],
     ["2011", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.mauveColor()],
     ["2009", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleYellowColor()]
 ]

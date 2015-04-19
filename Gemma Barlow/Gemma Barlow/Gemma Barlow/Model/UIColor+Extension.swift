@@ -19,6 +19,10 @@ extension UIColor {
     class func mauveColor() -> UIColor {
         return UIColor(hexValue: 0xa1b4cc)
     }
+
+    class func palePinkColor() -> UIColor {
+        return UIColor(hexValue: 0xf3b9cd)
+    }
     
     class func oceanBlueColor() -> UIColor {
         return UIColor(hexValue: 0x185674)
