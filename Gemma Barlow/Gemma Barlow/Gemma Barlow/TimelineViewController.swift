@@ -87,14 +87,37 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     lazy var headerView: TimelineHeaderView = {
         let bundle = NSBundle.mainBundle()
         let finalView = bundle.loadNibNamed("TimelineHeaderView", owner: self, options: nil)[0] as! TimelineHeaderView
+        
+        let tap = UITapGestureRecognizer(target: self, action: Selector("headerViewTapped:"))
+        finalView.addGestureRecognizer(tap)
+        
         return finalView
-        }()
+    }()
+    
+    func headerViewTapped(sender: UIView) {
+        // GB - To be continued
+    }
     
     lazy var footerView: TimelineFooterView = {
         let bundle = NSBundle.mainBundle()
         let finalView = bundle.loadNibNamed("TimelineFooterView", owner: self, options: nil)[0] as! TimelineFooterView
+        
+        let tap = UITapGestureRecognizer(target: self, action: Selector("footerViewTapped:"))
+        finalView.addGestureRecognizer(tap)
+            
         return finalView
     }()
+    
+    func footerViewTapped(sender: UIView) {
+        presentTimelineDetailsViewController()
+    }
+    
+    
+    private func presentTimelineDetailsViewController() {
+        let storyboard = UIStoryboard(name: "TimelineDetail", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("TimelineDetailViewController") as! UIViewController
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
     
 }
 
