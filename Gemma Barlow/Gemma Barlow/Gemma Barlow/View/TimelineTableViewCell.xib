@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco, California" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt0-Gv-HQE">
-                        <rect key="frame" x="83" y="47" width="150" height="24"/>
+                        <rect key="frame" x="83" y="47" width="150" height="21"/>
                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -45,13 +45,19 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lonely-planet" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-wv-d4A">
-                        <rect key="frame" x="83" y="81" width="100" height="100"/>
+                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lonely-planet" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-wv-d4A" userLabel="Employer Image">
+                        <rect key="frame" x="83" y="101" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="BDf-EY-tQg"/>
                             <constraint firstAttribute="width" constant="100" id="GfZ-1h-dwN"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Senior Developer" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqJ-77-SsV" userLabel="Job Title Label">
+                        <rect key="frame" x="83" y="70" width="90" height="16"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="0.10838968975202785" green="0.65232462516593648" blue="0.68509451130505061" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
@@ -61,16 +67,18 @@
                     <constraint firstItem="Nb4-pY-keo" firstAttribute="top" secondItem="fwH-mw-3dX" secondAttribute="topMargin" id="FQF-Xg-Xn1"/>
                     <constraint firstItem="Nb4-pY-keo" firstAttribute="leading" secondItem="zt0-Gv-HQE" secondAttribute="leading" id="Gc0-tu-8bR"/>
                     <constraint firstItem="Nb4-pY-keo" firstAttribute="centerY" secondItem="dHc-sg-p0j" secondAttribute="centerY" id="HGr-2i-TGG"/>
+                    <constraint firstItem="kqJ-77-SsV" firstAttribute="leading" secondItem="zt0-Gv-HQE" secondAttribute="leading" id="IIz-BN-Y4v"/>
                     <constraint firstItem="yLN-Xl-YrK" firstAttribute="leading" secondItem="dHc-sg-p0j" secondAttribute="trailing" constant="8" id="NW0-D8-EhS"/>
                     <constraint firstItem="Nb4-pY-keo" firstAttribute="trailing" secondItem="zt0-Gv-HQE" secondAttribute="trailing" id="V0H-Qf-S39"/>
+                    <constraint firstItem="kqJ-77-SsV" firstAttribute="top" secondItem="zt0-Gv-HQE" secondAttribute="bottom" constant="2" id="VJp-PA-K3q"/>
                     <constraint firstItem="TL8-FB-CQj" firstAttribute="centerX" secondItem="yLN-Xl-YrK" secondAttribute="centerX" id="XZa-RG-6oJ"/>
                     <constraint firstItem="TL8-FB-CQj" firstAttribute="leading" secondItem="fwH-mw-3dX" secondAttribute="leadingMargin" constant="60" id="Yzg-o0-Xur"/>
                     <constraint firstItem="yLN-Xl-YrK" firstAttribute="top" secondItem="fwH-mw-3dX" secondAttribute="topMargin" constant="20" id="bvV-QC-LaX"/>
                     <constraint firstItem="yLN-Xl-YrK" firstAttribute="centerY" secondItem="Nb4-pY-keo" secondAttribute="centerY" id="eIE-6A-hmZ"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Fap-wv-d4A" secondAttribute="bottom" constant="10" id="eN0-YU-bnl"/>
+                    <constraint firstItem="Fap-wv-d4A" firstAttribute="top" secondItem="kqJ-77-SsV" secondAttribute="bottom" constant="15" id="gPs-qO-hwx"/>
                     <constraint firstItem="dHc-sg-p0j" firstAttribute="leading" secondItem="fwH-mw-3dX" secondAttribute="leadingMargin" constant="8" id="iLa-6l-BMf"/>
                     <constraint firstAttribute="bottomMargin" secondItem="TL8-FB-CQj" secondAttribute="bottom" constant="-8" id="kkp-Ma-rb2"/>
-                    <constraint firstItem="Fap-wv-d4A" firstAttribute="top" secondItem="zt0-Gv-HQE" secondAttribute="bottom" constant="10" id="v2B-al-jmO"/>
                     <constraint firstItem="zt0-Gv-HQE" firstAttribute="top" secondItem="Nb4-pY-keo" secondAttribute="bottom" constant="-12" id="y5c-ku-VU5"/>
                     <constraint firstItem="Nb4-pY-keo" firstAttribute="leading" secondItem="yLN-Xl-YrK" secondAttribute="trailing" constant="10" id="zFj-87-KMt"/>
                 </constraints>
@@ -83,6 +91,7 @@
             <connections>
                 <outlet property="employerImageView" destination="Fap-wv-d4A" id="G5l-dW-513"/>
                 <outlet property="employerTitleLabel" destination="Nb4-pY-keo" id="wT7-NQ-P9u"/>
+                <outlet property="jobLabel" destination="kqJ-77-SsV" id="my8-n0-Jom"/>
                 <outlet property="locationLabel" destination="zt0-Gv-HQE" id="LIR-tZ-r79"/>
                 <outlet property="timelineView" destination="TL8-FB-CQj" id="T2U-Ar-rnK"/>
                 <outlet property="yearLabel" destination="dHc-sg-p0j" id="6qt-Dv-JaX"/>

@@ -12,6 +12,7 @@ class TimelineTableViewCell: UITableViewCell {
 
     @IBOutlet weak var timelineView: UIView!
     @IBOutlet weak var employerImageView: UIImageView!
+    @IBOutlet weak var jobLabel: UILabel!
     @IBOutlet weak var employerTitleLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
@@ -27,10 +28,12 @@ class TimelineTableViewCell: UITableViewCell {
     
     // MARK: - Configuration
     
-    func configureCellWithEmployerData(year: String, title: String, location: String, imageName: String, color: UIColor) {
+    func configureCellWithEmployerData(year: String, job: String, title: String, location: String, imageName: String, color: UIColor) {
         employerImageView.image = UIImage(named: imageName)
         employerImageView.layer.cornerRadius = 8.0
         employerImageView.clipsToBounds = true
+        
+        jobLabel.text = job
         
         employerTitleLabel.text = title
         yearLabel.text = year

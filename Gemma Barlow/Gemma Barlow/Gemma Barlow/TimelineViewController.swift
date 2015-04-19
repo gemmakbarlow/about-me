@@ -9,10 +9,10 @@
 import UIKit
 
 private let timelineData = [
-    ["2014 -", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
-    ["2013", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.palePinkColor()],
-    ["2011", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.mauveColor()],
-    ["2009", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleYellowColor()]
+    ["2014 -", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
+    ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.palePinkColor()],
+    ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.mauveColor()],
+    ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleYellowColor()]
 ]
 
 private let TimelineEstimatedCellHeight: CGFloat = 160.0
@@ -54,12 +54,13 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
 
         let data = timelineData[indexPath.row]
         let year: String = data[0] as! String
-        let title: String = data[1] as! String
-        let location: String = data[2] as! String
-        let imageName: String = data[3] as! String
-        let color: UIColor = data[4] as! UIColor
+        let job: String = data[1] as! String
+        let title: String = data[2] as! String
+        let location: String = data[3] as! String
+        let imageName: String = data[4] as! String
+        let color: UIColor = data[5] as! UIColor
         
-        cell.configureCellWithEmployerData(year, title: title, location: location, imageName: imageName, color: color)
+        cell.configureCellWithEmployerData(year, job: job, title: title, location: location, imageName: imageName, color: color)
         
         return cell
     }

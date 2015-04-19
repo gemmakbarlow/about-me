@@ -11,6 +11,8 @@
 		A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */; };
 		A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */; };
 		A7E73C501AE3175500DFB752 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4F1AE3175500DFB752 /* UIColor+Extension.swift */; };
+		A7E73C531AE329F400DFB752 /* TimelineFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C521AE329F400DFB752 /* TimelineFooterView.swift */; };
+		A7E73C551AE32A0F00DFB752 /* TimelineFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C541AE32A0F00DFB752 /* TimelineFooterView.xib */; };
 		A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */; };
 		A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCAF1AE27C1E004CC664 /* TimelineViewController.swift */; };
 		A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB11AE27C1E004CC664 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineTableViewCell.swift; path = View/TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
 		A7E73C4F1AE3175500DFB752 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Model/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A7E73C521AE329F400DFB752 /* TimelineFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineFooterView.swift; path = View/TimelineFooterView.swift; sourceTree = "<group>"; };
+		A7E73C541AE32A0F00DFB752 /* TimelineFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineFooterView.xib; path = View/TimelineFooterView.xib; sourceTree = "<group>"; };
 		A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gemma Barlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FBFCAC1AE27C1E004CC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		A7E73C441AE2FB1600DFB752 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7E73C511AE329BF00DFB752 /* TimelineFooterView */,
 				A7E73C471AE2FB5600DFB752 /* TimelineTableViewCell */,
 			);
 			name = View;
@@ -110,6 +115,15 @@
 				A7E73C4F1AE3175500DFB752 /* UIColor+Extension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A7E73C511AE329BF00DFB752 /* TimelineFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				A7E73C521AE329F400DFB752 /* TimelineFooterView.swift */,
+				A7E73C541AE32A0F00DFB752 /* TimelineFooterView.xib */,
+			);
+			name = TimelineFooterView;
 			sourceTree = "<group>";
 		};
 		A7FBFC9F1AE27C1E004CC664 = {
@@ -254,6 +268,7 @@
 				A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */,
 				A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */,
 				A7FBFCB81AE27C1E004CC664 /* LaunchScreen.xib in Resources */,
+				A7E73C551AE32A0F00DFB752 /* TimelineFooterView.xib in Resources */,
 				A7FBFCB51AE27C1E004CC664 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +289,7 @@
 			files = (
 				A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */,
 				A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */,
+				A7E73C531AE329F400DFB752 /* TimelineFooterView.swift in Sources */,
 				A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */,
 				A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */,
 				A7E73C501AE3175500DFB752 /* UIColor+Extension.swift in Sources */,
