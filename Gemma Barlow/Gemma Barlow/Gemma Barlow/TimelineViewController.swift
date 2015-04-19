@@ -71,9 +71,11 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - Other
     
     private func setupTableView() {
+        tableView.tableHeaderView = headerView
         tableView.backgroundColor = UIColor.backgroundGrayColor()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = TimelineEstimatedCellHeight
+        tableView.tableFooterView = footerView
     }
     
     private func registerCellsAndNibs() {
@@ -81,6 +83,18 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.registerNib(nib, forCellReuseIdentifier: TimelineTableViewCell.cellIdentifier)
     }
     
+    
+    lazy var headerView: TimelineHeaderView = {
+        let bundle = NSBundle.mainBundle()
+        let finalView = bundle.loadNibNamed("TimelineHeaderView", owner: self, options: nil)[0] as! TimelineHeaderView
+        return finalView
+        }()
+    
+    lazy var footerView: TimelineFooterView = {
+        let bundle = NSBundle.mainBundle()
+        let finalView = bundle.loadNibNamed("TimelineFooterView", owner: self, options: nil)[0] as! TimelineFooterView
+        return finalView
+    }()
     
 }
 
