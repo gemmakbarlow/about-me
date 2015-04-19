@@ -9,10 +9,10 @@
 import UIKit
 
 private let timelineData = [
-    ["2014 -", "Harry's", "harrys", UIColor.tealColor()],
-    ["2013", "Couchsurfing", "couchsurfing", UIColor.oceanBlueColor()],
-    ["2011", "Lonely Planet - BBC", "lonely-planet", UIColor.mauveColor()],
-    ["2009", "Intunity", "westfield", UIColor.paleYellowColor()]
+    ["2014 -", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
+    ["2013", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.oceanBlueColor()],
+    ["2011", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.mauveColor()],
+    ["2009", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleYellowColor()]
 ]
 
 private let TimelineEstimatedCellHeight: CGFloat = 160.0
@@ -30,6 +30,12 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         
         setupTableView()
         registerCellsAndNibs()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        tableView.flashScrollIndicators()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,10 +55,11 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         let data = timelineData[indexPath.row]
         let year: String = data[0] as! String
         let title: String = data[1] as! String
-        let imageName: String = data[2] as! String
-        let color: UIColor = data[3] as! UIColor
+        let location: String = data[2] as! String
+        let imageName: String = data[3] as! String
+        let color: UIColor = data[4] as! UIColor
         
-        cell.configureCellWithEmployerData(year, title: title, imageName: imageName, color: color)
+        cell.configureCellWithEmployerData(year, title: title, location: location, imageName: imageName, color: color)
         
         return cell
     }
@@ -63,7 +70,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - Other
     
     private func setupTableView() {
-        tableView.backgroundColor = UIColor.grayColor()
+        tableView.backgroundColor = UIColor.backgroundGrayColor()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = TimelineEstimatedCellHeight
     }

@@ -29,6 +29,10 @@ extension UIColor {
     }
     
     
+    class func backgroundGrayColor() -> UIColor {
+        return UIColor(hexValue: 0x363636)
+    }
+    
     // MARK: - Hex Initializer
     
     convenience init(hexValue: UInt) {
