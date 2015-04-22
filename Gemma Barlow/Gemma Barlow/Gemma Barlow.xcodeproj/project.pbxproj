@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70639AD1AE7219A0024B13D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */; };
 		A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */; };
 		A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */; };
 		A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineTableViewCell.xib; path = View/TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineTableViewCell.swift; path = View/TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
@@ -80,6 +82,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A70639A91AE720CB0024B13D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		A7E73C431AE2FB0C00DFB752 /* TimelineViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +138,7 @@
 			children = (
 				A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */,
 				A7E73C4F1AE3175500DFB752 /* UIColor+Extension.swift */,
+				A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +200,7 @@
 		A7FBFCAA1AE27C1E004CC664 /* Gemma Barlow */ = {
 			isa = PBXGroup;
 			children = (
+				A70639A91AE720CB0024B13D /* Other */,
 				A7E73C4C1AE30B3800DFB752 /* Extensions */,
 				A7E73C461AE2FB1F00DFB752 /* Controller */,
 				A7E73C451AE2FB1B00DFB752 /* Model */,
@@ -334,6 +345,7 @@
 			files = (
 				A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */,
 				A7E73C681AE3472600DFB752 /* TimelineDetailViewController.swift in Sources */,
+				A70639AD1AE7219A0024B13D /* UIView+Extensions.swift in Sources */,
 				A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */,
 				A7E73C571AE336FE00DFB752 /* TimelineFooterView.swift in Sources */,
 				A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */,

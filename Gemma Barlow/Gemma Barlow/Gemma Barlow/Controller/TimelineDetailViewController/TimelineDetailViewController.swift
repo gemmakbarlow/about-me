@@ -13,7 +13,8 @@ private let timelineData = [
     "The only Valentine's Day present Gem has ever received was an app; it contained 10 puzzles that when completed revealed cheesy love-cartoons.",
     "Yep, she shares a name with the character from Sons of Anarchy",
     "Gemma has found three bugs in her iOS code whilst dreaming; her subconscious frightens her sometimes.",
-    "Gemma is writing the Harry's App * entirely * in Swift."
+    "Gemma is writing the Harry's App * entirely * in Swift.",
+    "Gemma didn't appy for a ticket in 2014 as her little sister got married for June 08 in Australia * sigh *"
 ]
 
 class TimelineDetailViewController: UIViewController {
@@ -43,6 +44,10 @@ class TimelineDetailViewController: UIViewController {
     }
     
     @IBAction func swipeDownOccurred() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func closeButtonTapped(sender: UIButton) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 }

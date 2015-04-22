@@ -65,8 +65,16 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-    // MARK: - UITableViewDelegate
-    // GB - TBD
+    
+    // MARK: - UIScrollViewDelegate
+
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let bottom = scrollView.contentOffset.y + scrollView.frame.size.height
+        
+        if bottom >= scrollView.contentSize.height {
+            footerView.animate()
+        }
+    }
     
     // MARK: - Other
     
@@ -107,6 +115,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
             
         return finalView
     }()
+    
     
     func footerViewTapped(sender: UIView) {
         presentTimelineDetailsViewController()
