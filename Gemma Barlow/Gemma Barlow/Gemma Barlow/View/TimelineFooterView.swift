@@ -29,11 +29,10 @@ class TimelineFooterView: UIView {
     
     func animate() {
         if imageView.alpha == 0 {
-            fadeInView(imageView, completion: { (completed: Bool) -> Void in
-                if completed && self.titleLabel.alpha == 0 {
-                    self.fadeInView(self.titleLabel, delay: TextAnimationDelay,  completion: nil)
-                     self.fadeInView(self.subtitleLabel, delay: TextAnimationDelay,  completion: nil)
-                }
+            fadeInView(titleLabel, completion: { (completed: Bool) -> Void in
+                self.fadeInView(self.imageView, completion: { (completed: Bool) -> Void in
+                    self.fadeInView(self.subtitleLabel, completion: nil)
+                })
             })
         }
     }

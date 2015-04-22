@@ -17,66 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="twitter" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-Re-bzk">
-                                <rect key="frame" x="207" y="75" width="186" height="33"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="linkedin" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6t-Zd-RU0">
-                                <rect key="frame" x="207" y="116" width="186" height="33"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="stackoverflow" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-eX-5gr">
-                                <rect key="frame" x="207" y="157" width="186" height="33"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="gemmakbarlow.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ai-y1-luT">
-                                <rect key="frame" x="207" y="198" width="186" height="33"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WWDC random fact here!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPh-IX-VhW">
-                                <rect key="frame" x="190" y="390" width="220" height="33"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEo-G3-HMA">
-                                <rect key="frame" x="17" y="-28" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHX-am-KHV">
-                                <rect key="frame" x="59" y="34" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with ♡ for WWDC 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-u9-a98">
-                                <rect key="frame" x="203" y="556" width="194" height="24"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiT-d9-dN0" userLabel="Random Fact Button">
-                                <rect key="frame" x="161" y="352" width="30" height="30"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="revealFactTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="J7I-mz-yqb"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Like random facts ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh1-V5-nx8">
-                                <rect key="frame" x="161" y="351" width="279" height="31"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WWDC random fact here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPh-IX-VhW" userLabel="Random Fact Display Label">
+                                <rect key="frame" x="26" y="390" width="548" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -91,40 +34,111 @@
                                     <action selector="closeButtonTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="xCR-Hr-d1K"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s20-ir-KeM" userLabel="Random Fact Title Button">
+                                <rect key="frame" x="161" y="339" width="279" height="43"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <state key="normal" title="Like random facts ?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="revealFactTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="lip-UQ-GGJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossed-fingers" translatesAutoresizingMaskIntoConstraints="NO" id="naS-IN-52z">
+                                <rect key="frame" x="484" y="490" width="100" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Made with ♡ for WWDC 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-u9-a98" userLabel="Made with Love Label">
+                                <rect key="frame" x="26" y="556" width="450" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xD-7y-niv">
+                                <rect key="frame" x="207" y="63" width="60" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="twitter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="ym6-cN-Zvg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr1-VW-XVA">
+                                <rect key="frame" x="207" y="116" width="76" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="linkedIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkedInTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="Hoc-Hd-LJy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-9p-G26">
+                                <rect key="frame" x="207" y="169" width="61" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="github">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="githubTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="rEh-xz-Kpz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paQ-9I-sYU">
+                                <rect key="frame" x="207" y="222" width="186" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <state key="normal" title="gemmakbarlow.com">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="personalWebsiteTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="Akn-Ce-Rz6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.096630366161616132" green="0.096630366161616132" blue="0.096630366161616132" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="paQ-9I-sYU" firstAttribute="top" secondItem="fz0-9p-G26" secondAttribute="bottom" constant="8" id="3M7-eQ-I2R"/>
+                            <constraint firstItem="fz0-9p-G26" firstAttribute="leading" secondItem="7xD-7y-niv" secondAttribute="leading" id="5a6-mf-baE"/>
                             <constraint firstItem="Hgb-9v-rQO" firstAttribute="leading" secondItem="2FQ-iT-tc0" secondAttribute="leadingMargin" id="7N2-AC-I7r"/>
                             <constraint firstItem="by9-7d-hi5" firstAttribute="top" secondItem="HNK-u9-a98" secondAttribute="bottom" constant="20" id="7vF-5W-ghC"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="trailing" secondItem="Sls-Re-bzk" secondAttribute="trailing" id="DBk-p4-3jQ"/>
-                            <constraint firstAttribute="centerX" secondItem="Kh1-V5-nx8" secondAttribute="centerX" id="Egi-th-MBA"/>
-                            <constraint firstAttribute="centerX" secondItem="rWC-eX-5gr" secondAttribute="centerX" id="F1Y-mW-1dF"/>
-                            <constraint firstAttribute="centerX" secondItem="Sls-Re-bzk" secondAttribute="centerX" id="OAF-0E-Ywk"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="trailing" secondItem="6Ai-y1-luT" secondAttribute="trailing" id="Q6a-7a-UWX"/>
+                            <constraint firstItem="s20-ir-KeM" firstAttribute="centerX" secondItem="paQ-9I-sYU" secondAttribute="centerX" id="D0q-Rc-74Z"/>
+                            <constraint firstItem="s20-ir-KeM" firstAttribute="centerX" secondItem="xPh-IX-VhW" secondAttribute="centerX" id="EJh-eV-doW"/>
+                            <constraint firstItem="s20-ir-KeM" firstAttribute="top" secondItem="paQ-9I-sYU" secondAttribute="bottom" constant="72" id="EOg-MH-k0S"/>
+                            <constraint firstItem="naS-IN-52z" firstAttribute="leading" secondItem="HNK-u9-a98" secondAttribute="trailing" constant="8" id="FXY-KD-JKK"/>
+                            <constraint firstItem="xPh-IX-VhW" firstAttribute="leading" secondItem="2FQ-iT-tc0" secondAttribute="leadingMargin" constant="10" id="IzI-zi-coB"/>
+                            <constraint firstItem="fz0-9p-G26" firstAttribute="top" secondItem="xr1-VW-XVA" secondAttribute="bottom" constant="8" id="VVb-RC-xdd"/>
                             <constraint firstItem="Hgb-9v-rQO" firstAttribute="top" secondItem="qfl-O8-pJR" secondAttribute="bottom" constant="10" id="VgR-8w-u0C"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="leading" secondItem="Sls-Re-bzk" secondAttribute="leading" id="Vgo-X8-xIi"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="top" secondItem="y6t-Zd-RU0" secondAttribute="bottom" constant="8" id="W3D-uv-Ocs"/>
+                            <constraint firstItem="HNK-u9-a98" firstAttribute="leading" secondItem="2FQ-iT-tc0" secondAttribute="leadingMargin" constant="10" id="W2Y-Gb-a71"/>
                             <constraint firstAttribute="centerX" secondItem="HNK-u9-a98" secondAttribute="centerX" id="bCS-MV-rQO"/>
-                            <constraint firstItem="Kh1-V5-nx8" firstAttribute="leading" secondItem="UiT-d9-dN0" secondAttribute="leading" id="bdb-0B-GT7"/>
+                            <constraint firstItem="xr1-VW-XVA" firstAttribute="top" secondItem="7xD-7y-niv" secondAttribute="bottom" constant="8" id="cJJ-0I-mQ3"/>
                             <constraint firstAttribute="centerX" secondItem="xPh-IX-VhW" secondAttribute="centerX" id="deH-vY-5ii"/>
-                            <constraint firstItem="xPh-IX-VhW" firstAttribute="top" secondItem="Kh1-V5-nx8" secondAttribute="bottom" constant="8" id="dug-6c-R3x"/>
-                            <constraint firstItem="Kh1-V5-nx8" firstAttribute="top" secondItem="6Ai-y1-luT" secondAttribute="bottom" constant="120" id="hUX-dt-UMs"/>
-                            <constraint firstItem="Kh1-V5-nx8" firstAttribute="centerY" secondItem="UiT-d9-dN0" secondAttribute="centerY" id="jgf-2J-wrQ"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="leading" secondItem="y6t-Zd-RU0" secondAttribute="leading" id="ku5-Dq-YAd"/>
-                            <constraint firstItem="6Ai-y1-luT" firstAttribute="top" secondItem="rWC-eX-5gr" secondAttribute="bottom" constant="8" id="lPl-ju-kTo"/>
-                            <constraint firstAttribute="centerX" secondItem="y6t-Zd-RU0" secondAttribute="centerX" id="lsg-nO-9mj"/>
-                            <constraint firstItem="Sls-Re-bzk" firstAttribute="top" secondItem="qfl-O8-pJR" secondAttribute="bottom" constant="55" id="m5h-T7-kT3"/>
-                            <constraint firstItem="y6t-Zd-RU0" firstAttribute="top" secondItem="Sls-Re-bzk" secondAttribute="bottom" constant="8" id="rRx-ee-QYk"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="trailing" secondItem="y6t-Zd-RU0" secondAttribute="trailing" id="vDx-Md-nej"/>
-                            <constraint firstItem="rWC-eX-5gr" firstAttribute="leading" secondItem="6Ai-y1-luT" secondAttribute="leading" id="xhn-i9-Bjy"/>
+                            <constraint firstItem="xPh-IX-VhW" firstAttribute="top" secondItem="s20-ir-KeM" secondAttribute="bottom" constant="8" id="fRz-h7-atk"/>
+                            <constraint firstItem="naS-IN-52z" firstAttribute="trailing" secondItem="2FQ-iT-tc0" secondAttribute="trailingMargin" id="fVF-sN-cxN"/>
+                            <constraint firstItem="by9-7d-hi5" firstAttribute="top" secondItem="naS-IN-52z" secondAttribute="bottom" constant="10" id="imB-iu-D0g"/>
+                            <constraint firstItem="7xD-7y-niv" firstAttribute="top" secondItem="qfl-O8-pJR" secondAttribute="bottom" constant="43" id="jFr-cz-Gkb"/>
+                            <constraint firstItem="fz0-9p-G26" firstAttribute="leading" secondItem="paQ-9I-sYU" secondAttribute="leading" id="st8-xB-B3k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xPh-IX-VhW" secondAttribute="trailing" constant="10" id="wYZ-k6-AqT"/>
+                            <constraint firstItem="fz0-9p-G26" firstAttribute="leading" secondItem="xr1-VW-XVA" secondAttribute="leading" id="wej-Xl-gI9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bCS-MV-rQO"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ny0-4N-v2m" appends="YES" id="mzK-pt-6sf"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="randomFactLabel" destination="xPh-IX-VhW" id="X60-f4-8wm"/>
+                        <outlet property="closeButton" destination="Hgb-9v-rQO" id="ZTn-Mb-btN"/>
+                        <outlet property="madeWithLoveLabel" destination="HNK-u9-a98" id="b9a-M6-2nQ"/>
+                        <outlet property="randomFactLabel" destination="xPh-IX-VhW" id="HkD-3b-drI"/>
+                        <outlet property="randomFactTitleButton" destination="s20-ir-KeM" id="AxJ-dW-bSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5v-yl-QrO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,4 +151,7 @@
             <point key="canvasLocation" x="120" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="crossed-fingers" width="100" height="100"/>
+    </resources>
 </document>

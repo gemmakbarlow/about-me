@@ -24,6 +24,10 @@ extension UIColor {
         return UIColor(hexValue: 0xf3b9cd)
     }
     
+    class func skyBlueColor() -> UIColor {
+        return UIColor(hexValue: 0x326ec6)
+    }
+    
     class func oceanBlueColor() -> UIColor {
         return UIColor(hexValue: 0x185674)
     }
