@@ -69,9 +69,9 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - UIScrollViewDelegate
 
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        let bottom = scrollView.contentOffset.y + scrollView.frame.size.height
+        let bottom = scrollView.contentOffset.y + scrollView.frame.size.height - statusBarHeight() - navigationBarHeight()
         
-        if bottom >= scrollView.contentSize.height {
+        if floor(bottom) >= floor(scrollView.contentSize.height) {
             footerView.animate()
         }
     }
@@ -125,7 +125,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     private func presentTimelineDetailsViewController() {
         let storyboard = UIStoryboard(name: "TimelineDetail", bundle: nil)
         let viewController = storyboard.instantiateViewControllerWithIdentifier("TimelineDetailViewController") as! UIViewController
-        self.presentViewController(viewController, animated: true, completion: nil)
+        presentViewController(viewController, animated: true, completion: nil)
     }
     
 }

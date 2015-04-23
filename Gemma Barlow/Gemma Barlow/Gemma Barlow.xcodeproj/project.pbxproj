@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A70639AD1AE7219A0024B13D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */; };
+		A7C4F2FD1AE8714700A527C0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */; };
+		A7C4F2FE1AE8716F00A527C0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */; };
 		A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */; };
 		A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */; };
 		A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */; };
@@ -40,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineTableViewCell.xib; path = View/TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineTableViewCell.swift; path = View/TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
@@ -139,6 +142,7 @@
 				A7E73C4D1AE30B5400DFB752 /* String+Extensions.swift */,
 				A7E73C4F1AE3175500DFB752 /* UIColor+Extension.swift */,
 				A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */,
+				A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +353,7 @@
 				A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */,
 				A7E73C571AE336FE00DFB752 /* TimelineFooterView.swift in Sources */,
 				A7E73C4B1AE3081C00DFB752 /* TimelineTableViewCell.swift in Sources */,
+				A7C4F2FD1AE8714700A527C0 /* UIViewController+Extensions.swift in Sources */,
 				A7E73C5C1AE33C3000DFB752 /* TimelineHeaderView.swift in Sources */,
 				A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */,
 				A7E73C501AE3175500DFB752 /* UIColor+Extension.swift in Sources */,
@@ -360,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C4F2FE1AE8716F00A527C0 /* UIViewController+Extensions.swift in Sources */,
 				A7FBFCC41AE27C1E004CC664 /* Gemma_BarlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
