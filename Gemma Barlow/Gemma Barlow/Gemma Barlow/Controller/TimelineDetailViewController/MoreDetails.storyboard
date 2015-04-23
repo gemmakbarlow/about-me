@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Timeline Detail View Controller-->
+        <!--More Details View Controller-->
         <scene sceneID="pcC-or-cdE">
             <objects>
-                <viewController storyboardIdentifier="TimelineDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HBp-zJ-gbo" customClass="TimelineDetailViewController" customModule="Gemma_Barlow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HBp-zJ-gbo" customClass="MoreDetailsViewController" customModule="Gemma_Barlow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qfl-O8-pJR"/>
                         <viewControllerLayoutGuide type="bottom" id="by9-7d-hi5"/>
@@ -45,10 +45,10 @@
                                     <action selector="revealFactTapped:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="lip-UQ-GGJ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossed-fingers" translatesAutoresizingMaskIntoConstraints="NO" id="naS-IN-52z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="crossed-fingers" translatesAutoresizingMaskIntoConstraints="NO" id="naS-IN-52z">
                                 <rect key="frame" x="484" y="490" width="100" height="100"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Made with ♡ for WWDC 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-u9-a98" userLabel="Made with Love Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Made with ♡ for WWDC 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-u9-a98" userLabel="Made with Love Label">
                                 <rect key="frame" x="26" y="556" width="450" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>

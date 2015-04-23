@@ -8,20 +8,19 @@
 
 import UIKit
 
-
-
+// MARK: - Animation Constants
 
 private let SpringUpAnimationDelay: NSTimeInterval = 0.0
 private let SpringUpAnimationDuration: NSTimeInterval = 1.0
 private let SpringUpAnimationDampening: CGFloat = 0.7
 private let SpringUpAnimationVelocity: CGFloat = 1.0
 
+
 class TimelineHeaderView: UIView {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
-    
     @IBOutlet weak var imagePositionConstraint: NSLayoutConstraint!
     
     // MARK: - View Lifecycle

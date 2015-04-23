@@ -8,12 +8,21 @@
 
 import UIKit
 
+// MARK: - Data
+
 private let timelineData = [
     ["2014 -", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
     ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.palePinkColor()],
     ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.mauveColor()],
     ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleYellowColor()]
 ]
+
+private let TimelineYearIndex = 0
+private let TimelineJobIndex = 1
+private let TimelineTitleIndex = 2
+private let TimelineLocationIndex = 3
+private let TimelineImageIndex = 4
+private let TimelineColorIndex = 5
 
 private let TimelineEstimatedCellHeight: CGFloat = 160.0
 
@@ -53,12 +62,13 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCellWithIdentifier(TimelineTableViewCell.cellIdentifier, forIndexPath: indexPath) as! TimelineTableViewCell
 
         let data = timelineData[indexPath.row]
-        let year: String = data[0] as! String
-        let job: String = data[1] as! String
-        let title: String = data[2] as! String
-        let location: String = data[3] as! String
-        let imageName: String = data[4] as! String
-        let color: UIColor = data[5] as! UIColor
+        
+        let year: String = data[TimelineYearIndex] as! String
+        let job: String = data[TimelineJobIndex] as! String
+        let title: String = data[TimelineTitleIndex] as! String
+        let location: String = data[TimelineLocationIndex] as! String
+        let imageName: String = data[TimelineImageIndex] as! String
+        let color: UIColor = data[TimelineColorIndex] as! UIColor
         
         cell.configureCellWithEmployerData(year, job: job, title: title, location: location, imageName: imageName, color: color)
         
@@ -75,6 +85,21 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
             footerView.animate()
         }
     }
+    
+    
+    // MARK: - Actions
+    
+    func footerViewTapped(sender: UIView) {
+        presentTimelineDetailsViewController()
+    }
+    
+    
+    private func presentTimelineDetailsViewController() {
+        let storyboard = UIStoryboard(name: "MoreDetails", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("MoreDetailsViewController") as! UIViewController
+        presentViewController(viewController, animated: true, completion: nil)
+    }
+    
     
     // MARK: - Other
     
@@ -115,18 +140,5 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
             
         return finalView
     }()
-    
-    
-    func footerViewTapped(sender: UIView) {
-        presentTimelineDetailsViewController()
-    }
-    
-    
-    private func presentTimelineDetailsViewController() {
-        let storyboard = UIStoryboard(name: "TimelineDetail", bundle: nil)
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("TimelineDetailViewController") as! UIViewController
-        presentViewController(viewController, animated: true, completion: nil)
-    }
-    
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A70639AD1AE7219A0024B13D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */; };
+		A7594FCC1AE8753F00A9C819 /* MoreDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7594FCA1AE8753F00A9C819 /* MoreDetails.storyboard */; };
+		A7594FCD1AE8753F00A9C819 /* MoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7594FCB1AE8753F00A9C819 /* MoreDetailsViewController.swift */; };
 		A7C4F2FD1AE8714700A527C0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */; };
 		A7C4F2FE1AE8716F00A527C0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */; };
 		A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */; };
@@ -18,10 +20,6 @@
 		A7E73C571AE336FE00DFB752 /* TimelineFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C561AE336FE00DFB752 /* TimelineFooterView.swift */; };
 		A7E73C5A1AE33BEB00DFB752 /* TimelineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C591AE33BEB00DFB752 /* TimelineHeaderView.xib */; };
 		A7E73C5C1AE33C3000DFB752 /* TimelineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C5B1AE33C3000DFB752 /* TimelineHeaderView.swift */; };
-		A7E73C611AE3457900DFB752 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C601AE3457900DFB752 /* WebView.storyboard */; };
-		A7E73C631AE3458300DFB752 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C621AE3458300DFB752 /* WebViewController.swift */; };
-		A7E73C661AE3470E00DFB752 /* TimelineDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E73C651AE3470E00DFB752 /* TimelineDetail.storyboard */; };
-		A7E73C681AE3472600DFB752 /* TimelineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E73C671AE3472600DFB752 /* TimelineDetailViewController.swift */; };
 		A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */; };
 		A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCAF1AE27C1E004CC664 /* TimelineViewController.swift */; };
 		A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB11AE27C1E004CC664 /* Main.storyboard */; };
@@ -42,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A7594FCA1AE8753F00A9C819 /* MoreDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreDetails.storyboard; path = Controller/TimelineDetailViewController/MoreDetails.storyboard; sourceTree = "<group>"; };
+		A7594FCB1AE8753F00A9C819 /* MoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreDetailsViewController.swift; path = Controller/TimelineDetailViewController/MoreDetailsViewController.swift; sourceTree = "<group>"; };
 		A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineTableViewCell.xib; path = View/TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineTableViewCell.swift; path = View/TimelineTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,10 +51,6 @@
 		A7E73C561AE336FE00DFB752 /* TimelineFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineFooterView.swift; path = View/TimelineFooterView.swift; sourceTree = "<group>"; };
 		A7E73C591AE33BEB00DFB752 /* TimelineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineHeaderView.xib; path = View/TimelineHeaderView.xib; sourceTree = "<group>"; };
 		A7E73C5B1AE33C3000DFB752 /* TimelineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineHeaderView.swift; path = View/TimelineHeaderView.swift; sourceTree = "<group>"; };
-		A7E73C601AE3457900DFB752 /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WebView.storyboard; path = Controller/WebViewController/WebView.storyboard; sourceTree = "<group>"; };
-		A7E73C621AE3458300DFB752 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Controller/WebViewController/WebViewController.swift; sourceTree = "<group>"; };
-		A7E73C651AE3470E00DFB752 /* TimelineDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TimelineDetail.storyboard; path = Controller/TimelineDetailViewController/TimelineDetail.storyboard; sourceTree = "<group>"; };
-		A7E73C671AE3472600DFB752 /* TimelineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineDetailViewController.swift; path = Controller/TimelineDetailViewController/TimelineDetailViewController.swift; sourceTree = "<group>"; };
 		A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gemma Barlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FBFCAC1AE27C1E004CC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,13 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A70639A91AE720CB0024B13D /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Other;
-			sourceTree = "<group>";
-		};
 		A7E73C431AE2FB0C00DFB752 /* TimelineViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,19 +99,11 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		A7E73C451AE2FB1B00DFB752 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		A7E73C461AE2FB1F00DFB752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A7E73C641AE346CC00DFB752 /* TimelineDetailViewController */,
+				A7E73C641AE346CC00DFB752 /* MoreDetailsViewController */,
 				A7E73C431AE2FB0C00DFB752 /* TimelineViewController */,
-				A7E73C5D1AE3456200DFB752 /* WebViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -165,22 +146,13 @@
 			name = TimelineHeaderView;
 			sourceTree = "<group>";
 		};
-		A7E73C5D1AE3456200DFB752 /* WebViewController */ = {
+		A7E73C641AE346CC00DFB752 /* MoreDetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A7E73C621AE3458300DFB752 /* WebViewController.swift */,
-				A7E73C601AE3457900DFB752 /* WebView.storyboard */,
+				A7594FCA1AE8753F00A9C819 /* MoreDetails.storyboard */,
+				A7594FCB1AE8753F00A9C819 /* MoreDetailsViewController.swift */,
 			);
-			name = WebViewController;
-			sourceTree = "<group>";
-		};
-		A7E73C641AE346CC00DFB752 /* TimelineDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A7E73C651AE3470E00DFB752 /* TimelineDetail.storyboard */,
-				A7E73C671AE3472600DFB752 /* TimelineDetailViewController.swift */,
-			);
-			name = TimelineDetailViewController;
+			name = MoreDetailsViewController;
 			sourceTree = "<group>";
 		};
 		A7FBFC9F1AE27C1E004CC664 = {
@@ -204,10 +176,8 @@
 		A7FBFCAA1AE27C1E004CC664 /* Gemma Barlow */ = {
 			isa = PBXGroup;
 			children = (
-				A70639A91AE720CB0024B13D /* Other */,
 				A7E73C4C1AE30B3800DFB752 /* Extensions */,
 				A7E73C461AE2FB1F00DFB752 /* Controller */,
-				A7E73C451AE2FB1B00DFB752 /* Model */,
 				A7E73C441AE2FB1600DFB752 /* View */,
 				A7FBFCAD1AE27C1E004CC664 /* AppDelegate.swift */,
 				A7FBFCB11AE27C1E004CC664 /* Main.storyboard */,
@@ -323,12 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E73C5A1AE33BEB00DFB752 /* TimelineHeaderView.xib in Resources */,
-				A7E73C611AE3457900DFB752 /* WebView.storyboard in Resources */,
-				A7E73C661AE3470E00DFB752 /* TimelineDetail.storyboard in Resources */,
 				A7E73C491AE2FB9200DFB752 /* TimelineTableViewCell.xib in Resources */,
 				A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */,
 				A7FBFCB81AE27C1E004CC664 /* LaunchScreen.xib in Resources */,
 				A7E73C551AE32A0F00DFB752 /* TimelineFooterView.xib in Resources */,
+				A7594FCC1AE8753F00A9C819 /* MoreDetails.storyboard in Resources */,
 				A7FBFCB51AE27C1E004CC664 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E73C4E1AE30B5400DFB752 /* String+Extensions.swift in Sources */,
-				A7E73C681AE3472600DFB752 /* TimelineDetailViewController.swift in Sources */,
+				A7594FCD1AE8753F00A9C819 /* MoreDetailsViewController.swift in Sources */,
 				A70639AD1AE7219A0024B13D /* UIView+Extensions.swift in Sources */,
 				A7FBFCB01AE27C1E004CC664 /* TimelineViewController.swift in Sources */,
 				A7E73C571AE336FE00DFB752 /* TimelineFooterView.swift in Sources */,
@@ -357,7 +326,6 @@
 				A7E73C5C1AE33C3000DFB752 /* TimelineHeaderView.swift in Sources */,
 				A7FBFCAE1AE27C1E004CC664 /* AppDelegate.swift in Sources */,
 				A7E73C501AE3175500DFB752 /* UIColor+Extension.swift in Sources */,
-				A7E73C631AE3458300DFB752 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
