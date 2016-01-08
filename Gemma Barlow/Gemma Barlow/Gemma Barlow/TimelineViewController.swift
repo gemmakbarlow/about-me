@@ -63,12 +63,12 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
 
         let data = timelineData[indexPath.row]
         
-        let year: String = data[TimelineYearIndex] as! String
-        let job: String = data[TimelineJobIndex] as! String
-        let title: String = data[TimelineTitleIndex] as! String
-        let location: String = data[TimelineLocationIndex] as! String
-        let imageName: String = data[TimelineImageIndex] as! String
-        let color: UIColor = data[TimelineColorIndex] as! UIColor
+        let year = data[TimelineYearIndex] as! String
+        let job = data[TimelineJobIndex] as! String
+        let title = data[TimelineTitleIndex] as! String
+        let location = data[TimelineLocationIndex] as! String
+        let imageName = data[TimelineImageIndex] as! String
+        let color = data[TimelineColorIndex] as! UIColor
         
         cell.configureCellWithEmployerData(year, job: job, title: title, location: location, imageName: imageName, color: color)
         
