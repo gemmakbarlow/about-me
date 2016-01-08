@@ -27,7 +27,7 @@ class TimelineHeaderView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = UIColor.backgroundGrayColor()
+        backgroundColor = .backgroundGrayColor()
 
         subtitleLabel.text = subtitleLabel.text?.uppercaseString
         

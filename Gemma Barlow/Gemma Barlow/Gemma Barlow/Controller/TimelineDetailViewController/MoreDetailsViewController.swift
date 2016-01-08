@@ -39,7 +39,7 @@ class MoreDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.backgroundGrayColor()
+        view.backgroundColor = .backgroundGrayColor()
         
         setupCloseButton()
         setupRandomFactTitleLabel()
@@ -55,20 +55,20 @@ class MoreDetailsViewController: UIViewController {
     // MARK: - Setup
     
     private func setupCloseButton() {
-        closeButton.setTitleColor(UIColor.tealColor(), forState: .Normal)
+        closeButton.setTitleColor(.tealColor(), forState: .Normal)
     }
     
     private func setupRandomFactTitleLabel() {
-        randomFactTitleButton.setTitleColor(UIColor.tealColor(), forState: .Normal)
+        randomFactTitleButton.setTitleColor(.tealColor(), forState: .Normal)
     }
     
     private func setupRandomFactLabel() {
         randomFactLabel.alpha = HideViewAlpha
-        randomFactLabel.textColor = UIColor.whiteColor()
+        randomFactLabel.textColor = .whiteColor()
     }
     
     private func setupMadeWithLoveLabel() {
-        madeWithLoveLabel.textColor = UIColor.skyBlueColor()
+        madeWithLoveLabel.textColor = .paleBlueColor()
     }
     
     // MARK: - Action

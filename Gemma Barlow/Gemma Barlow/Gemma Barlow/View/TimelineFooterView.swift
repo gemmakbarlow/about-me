@@ -21,7 +21,7 @@ class TimelineFooterView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         subtitleLabel.text = subtitleLabel.text?.uppercaseString
-        backgroundColor = UIColor.backgroundGrayColor()
+        backgroundColor = .backgroundGrayColor()
     }
     
     

@@ -23,7 +23,7 @@ class TimelineTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        locationLabel.textColor = UIColor.backgroundGrayColor()
+        locationLabel.textColor = .backgroundGrayColor()
     }
     
     
@@ -34,7 +34,7 @@ class TimelineTableViewCell: UITableViewCell {
         setupTextLabels(title, year: year, location: location, job: job)
         
         contentView.backgroundColor = color
-        timelineView.backgroundColor = UIColor.backgroundGrayColor()
+        timelineView.backgroundColor = .backgroundGrayColor()
     }
     
     // MARK: - Setup
