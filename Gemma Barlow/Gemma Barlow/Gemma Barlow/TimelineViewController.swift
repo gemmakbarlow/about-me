@@ -96,7 +96,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     private func presentTimelineDetailsViewController() {
         let storyboard = UIStoryboard(name: "MoreDetails", bundle: nil)
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("MoreDetailsViewController") as! UIViewController
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("MoreDetailsViewController")
         presentViewController(viewController, animated: true, completion: nil)
     }
     

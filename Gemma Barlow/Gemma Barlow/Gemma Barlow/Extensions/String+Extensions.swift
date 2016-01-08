@@ -14,15 +14,15 @@ extension String {
     If the char 'delimiter' exists in the String, truncate everything before it.
     Can be used to easily remove the Module name from a class.
     
-    :param: delimiter String denoting the point prior to which all characters should be removed from the String
+    - parameter delimiter: String denoting the point prior to which all characters should be removed from the String
     
-    :returns: Truncated string, or original string if the delimiter could not be found.
+    - returns: Truncated string, or original string if the delimiter could not be found.
     */
     func truncatePriorToChar(delimiter: String) -> String {
         var final = self
         let range = final.rangeOfString(delimiter, options: .BackwardsSearch)
         if let r = range {
-            let index = advance(r.startIndex, 1)
+            let index = r.startIndex.advancedBy(1)
             final = final.substringFromIndex(index)
         }
         return final

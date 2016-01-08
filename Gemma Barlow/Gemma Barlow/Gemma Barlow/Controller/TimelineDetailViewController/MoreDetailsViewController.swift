@@ -78,9 +78,9 @@ class MoreDetailsViewController: UIViewController {
         randomFactLabel.text = randomFactData[randomIndex]
         randomFactLabel.alpha = HideViewAlpha
         
-        UIView.animateWithDuration(RevealFactAnimationDuration, animations: {
-            self.randomFactLabel.alpha = ShowViewAlpha
-        })
+        UIView.animateWithDuration(RevealFactAnimationDuration) { [weak self] in
+            self?.randomFactLabel.alpha = ShowViewAlpha
+        }
     }
     
     @IBAction func swipeDownOccurred() {
