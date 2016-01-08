@@ -12,7 +12,7 @@ import UIKit
 
 private let randomFactData = [
     "At the 2011 WWDC Bash, Michael Franti gave Gem his guitar pick. She has it framed in her bedroom.",
-    "The only Valentine's Day present Gem has ever received was an app; it contained puzzles that when completed revealed cheesy love-cartoons. #developerdating",
+    "Gem once received an app for Valentine's Day; it contained puzzles that revealed cheesy ♡-cartoons. #developerdating",
     "Gem shares a name with the most badass character in Sons of Anarchy (and secretly loves it).",
     "Gemma has found three bugs in her iOS code whilst dreaming; her subconscious frightens her sometimes.",
     "Gemma is writing the Harry's App entirely in Swift.",
