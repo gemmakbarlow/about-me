@@ -12,9 +12,9 @@ import UIKit
 
 private let timelineData = [
     ["2014 -", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
-    ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.palePinkColor()],
-    ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.mauveColor()],
-    ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleYellowColor()]
+    ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.paleBlueColor()],
+    ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.tealColor()],
+    ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleBlueColor()]
 ]
 
 private let TimelineYearIndex = 0
@@ -63,12 +63,12 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
 
         let data = timelineData[indexPath.row]
         
-        let year: String = data[TimelineYearIndex] as! String
-        let job: String = data[TimelineJobIndex] as! String
-        let title: String = data[TimelineTitleIndex] as! String
-        let location: String = data[TimelineLocationIndex] as! String
-        let imageName: String = data[TimelineImageIndex] as! String
-        let color: UIColor = data[TimelineColorIndex] as! UIColor
+        let year = data[TimelineYearIndex] as! String
+        let job = data[TimelineJobIndex] as! String
+        let title = data[TimelineTitleIndex] as! String
+        let location = data[TimelineLocationIndex] as! String
+        let imageName = data[TimelineImageIndex] as! String
+        let color = data[TimelineColorIndex] as! UIColor
         
         cell.configureCellWithEmployerData(year, job: job, title: title, location: location, imageName: imageName, color: color)
         
@@ -96,7 +96,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     private func presentTimelineDetailsViewController() {
         let storyboard = UIStoryboard(name: "MoreDetails", bundle: nil)
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("MoreDetailsViewController") as! UIViewController
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("MoreDetailsViewController")
         presentViewController(viewController, animated: true, completion: nil)
     }
     

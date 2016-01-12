@@ -27,20 +27,20 @@ class TimelineHeaderView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = UIColor.backgroundGrayColor()
+        backgroundColor = .backgroundGrayColor()
 
         subtitleLabel.text = subtitleLabel.text?.uppercaseString
         
         // GB - Animation!
-        fadeInView(titleLabel, completion: { (completed: Bool) -> Void in
-            if completed {
-                self.springUpView(self.imagePositionConstraint, completion: { (completed: Bool) -> Void in
-                    if completed {
-                        self.fadeInView(self.subtitleLabel, completion: nil)
+        fadeInView(titleLabel) { [weak self] completed in
+            if let strong = self where completed {
+                strong.springUpView(strong.imagePositionConstraint) { [weak self] completed in
+                    if let strong = self where completed {
+                        self?.fadeInView(strong.subtitleLabel, completion: nil)
                     }
-                })
+                }
             }
-       })
+       }
     }
     
     
@@ -50,8 +50,13 @@ class TimelineHeaderView: UIView {
         imagePositionConstraint.constant = 0.0
         imageView.setNeedsUpdateConstraints()
         
-        UIView.animateWithDuration(SpringUpAnimationDuration, delay: SpringUpAnimationDelay, usingSpringWithDamping: SpringUpAnimationDampening, initialSpringVelocity: SpringUpAnimationVelocity, options: .BeginFromCurrentState, animations: {
-            self.imageView.layoutIfNeeded()
+        UIView.animateWithDuration(SpringUpAnimationDuration,
+            delay: SpringUpAnimationDelay,
+            usingSpringWithDamping: SpringUpAnimationDampening,
+            initialSpringVelocity: SpringUpAnimationVelocity,
+            options: .BeginFromCurrentState,
+            animations: { [weak self] in
+                self?.imageView.layoutIfNeeded()
         }, completion: completion)
     }
 }
