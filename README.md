@@ -6,6 +6,7 @@ This repository houses my successful [scholarship submission](https://developer.
 
 Some screenshots are included below, just for fun. 
 
-
-
+![Screenshot of top of main career timeline, including a header with a Bitmoji character](/Screenshots/one.PNG?raw=true)
+![Screenshot of bottom of main career timeline, including a footer with a Bitmoji character](/Screenshots/two.PNG?raw=true)
+![Screenshot of top of 'More' screen, including a button to tap to display a fact about the author](/Screenshots/three.PNG?raw=true)
 
