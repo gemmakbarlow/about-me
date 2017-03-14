@@ -10,8 +10,8 @@ import UIKit
 
 // MARK: - Animation Constants
 
-private let SpringUpAnimationDelay: NSTimeInterval = 0.0
-private let SpringUpAnimationDuration: NSTimeInterval = 1.0
+private let SpringUpAnimationDelay: TimeInterval = 0.0
+private let SpringUpAnimationDuration: TimeInterval = 1.0
 private let SpringUpAnimationDampening: CGFloat = 0.7
 private let SpringUpAnimationVelocity: CGFloat = 1.0
 
@@ -29,13 +29,13 @@ class TimelineHeaderView: UIView {
         super.awakeFromNib()
         backgroundColor = .backgroundGrayColor()
 
-        subtitleLabel.text = subtitleLabel.text?.uppercaseString
+        subtitleLabel.text = subtitleLabel.text?.uppercased()
         
         // GB - Animation!
         fadeInView(titleLabel) { [weak self] completed in
-            if let strong = self where completed {
+            if let strong = self, completed {
                 strong.springUpView(strong.imagePositionConstraint) { [weak self] completed in
-                    if let strong = self where completed {
+                    if let strong = self, completed {
                         self?.fadeInView(strong.subtitleLabel, completion: nil)
                     }
                 }
@@ -46,15 +46,15 @@ class TimelineHeaderView: UIView {
     
     // MARK: - Animation
     
-    private func springUpView(view: NSLayoutConstraint, completion: ((Bool) -> Void)?) {
+    fileprivate func springUpView(_ view: NSLayoutConstraint, completion: ((Bool) -> Void)?) {
         imagePositionConstraint.constant = 0.0
         imageView.setNeedsUpdateConstraints()
         
-        UIView.animateWithDuration(SpringUpAnimationDuration,
+        UIView.animate(withDuration: SpringUpAnimationDuration,
             delay: SpringUpAnimationDelay,
             usingSpringWithDamping: SpringUpAnimationDampening,
             initialSpringVelocity: SpringUpAnimationVelocity,
-            options: .BeginFromCurrentState,
+            options: .beginFromCurrentState,
             animations: { [weak self] in
                 self?.imageView.layoutIfNeeded()
         }, completion: completion)

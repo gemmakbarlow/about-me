@@ -15,16 +15,12 @@ extension UIViewController {
     // MARK: - Other
     
     func navigationBarHeight() -> CGFloat {
-        if let c = navigationController {
-            return c.navigationBar.frame.height
-        }
-        else {
-            return 0.0
-        }
+        guard let nav = navigationController else { return 0.0 }
+        return nav.navigationBar.frame.height
     }
     
     func statusBarHeight() -> CGFloat {
-        return UIApplication.sharedApplication().statusBarFrame.size.height
+        return UIApplication.shared.statusBarFrame.size.height
     }
     
 }

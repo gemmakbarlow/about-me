@@ -18,12 +18,11 @@ extension String {
     
     - returns: Truncated string, or original string if the delimiter could not be found.
     */
-    func truncatePriorToChar(delimiter: String) -> String {
+    func truncatePriorToChar(_ delimiter: String) -> String {
         var final = self
-        let range = final.rangeOfString(delimiter, options: .BackwardsSearch)
-        if let r = range {
-            let index = r.startIndex.advancedBy(1)
-            final = final.substringFromIndex(index)
+        if let range = final.range(of: delimiter, options: .backwards) {
+            let substringIndex = index(range.lowerBound, offsetBy: 1)
+            final = final.substring(from: substringIndex)
         }
         return final
     }

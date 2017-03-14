@@ -20,12 +20,12 @@ private let randomFactData = [
     "Gem couldn't apply for a ticket in 2014 as her little sis scheduled her wedding for June 08 *sigh*"
 ]
 
-private let TwitterProfile = "http://www.twitter.com/gemmakbarlow"
-private let LinkedInProfile = "http://www.linkedin.com/in/gemmakbarlow"
-private let GithubProfile = "http://github.com/gemmakbarlow"
-private let PersonalSite = "http://gemmakbarlow.com"
+private let twitterProfile = "http://www.twitter.com/gemmakbarlow"
+private let linkedInProfile = "http://www.linkedin.com/in/gemmakbarlow"
+private let githubProfile = "http://github.com/gemmakbarlow"
+private let personalSite = "http://gemmakbarlow.com"
 
-private let RevealFactAnimationDuration = 0.3
+private let revealFactAnimationDuration = 0.3
 
 class MoreDetailsViewController: UIViewController {
 
@@ -54,66 +54,65 @@ class MoreDetailsViewController: UIViewController {
     
     // MARK: - Setup
     
-    private func setupCloseButton() {
-        closeButton.setTitleColor(.tealColor(), forState: .Normal)
+    fileprivate func setupCloseButton() {
+        closeButton.setTitleColor(.tealColor(), for: UIControlState())
     }
     
-    private func setupRandomFactTitleLabel() {
-        randomFactTitleButton.setTitleColor(.tealColor(), forState: .Normal)
+    fileprivate func setupRandomFactTitleLabel() {
+        randomFactTitleButton.setTitleColor(.tealColor(), for: UIControlState())
     }
     
-    private func setupRandomFactLabel() {
-        randomFactLabel.alpha = HideViewAlpha
-        randomFactLabel.textColor = .whiteColor()
+    fileprivate func setupRandomFactLabel() {
+        randomFactLabel.alpha = Alpha.hide.rawValue
+        randomFactLabel.textColor = .white
     }
     
-    private func setupMadeWithLoveLabel() {
+    fileprivate func setupMadeWithLoveLabel() {
         madeWithLoveLabel.textColor = .paleBlueColor()
     }
     
     // MARK: - Action
     
-    @IBAction func revealFactTapped(sender: UIButton) {
+    @IBAction func revealFactTapped(_ sender: UIButton) {
         let randomIndex = Int(arc4random_uniform(UInt32(randomFactData.count)))
         randomFactLabel.text = randomFactData[randomIndex]
-        randomFactLabel.alpha = HideViewAlpha
+        randomFactLabel.alpha = Alpha.hide.rawValue
         
-        UIView.animateWithDuration(RevealFactAnimationDuration) { [weak self] in
-            self?.randomFactLabel.alpha = ShowViewAlpha
+        UIView.animate(withDuration: revealFactAnimationDuration) { [weak self] in
+            self?.randomFactLabel.alpha = Alpha.show.rawValue
         }
     }
     
     @IBAction func swipeDownOccurred() {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func closeButtonTapped(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func twitterTapped(sender: UIButton) {
-        let twitterURL = NSURL(string: TwitterProfile)
+    @IBAction func twitterTapped(_ sender: UIButton) {
+        let twitterURL = URL(string: twitterProfile)
         openURL(twitterURL)
     }
     
-    @IBAction func linkedInTapped(sender: UIButton) {
-        let linkedInURL = NSURL(string: LinkedInProfile)
+    @IBAction func linkedInTapped(_ sender: UIButton) {
+        let linkedInURL = URL(string: linkedInProfile)
         openURL(linkedInURL)
     }
     
-    @IBAction func githubTapped(sender: UIButton) {
-        let githubURL = NSURL(string: GithubProfile)
+    @IBAction func githubTapped(_ sender: UIButton) {
+        let githubURL = URL(string: githubProfile)
         openURL(githubURL)
     }
     
-    @IBAction func personalWebsiteTapped(sender: UIButton) {
-        let personalSite = NSURL(string: PersonalSite)
-        openURL(personalSite)
+    @IBAction func personalWebsiteTapped(_ sender: UIButton) {
+        let site = URL(string: personalSite)
+        openURL(site)
     }
     
-    private func openURL(url: NSURL?) {
-        if let u = url {
-            UIApplication.sharedApplication().openURL(u)
-        }
+    fileprivate func openURL(_ url: URL?) {
+        guard let url = url else { return }
+        UIApplication.shared.openURL(url)
     }
 }
