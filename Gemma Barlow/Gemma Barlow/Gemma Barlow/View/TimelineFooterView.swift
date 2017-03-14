@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let TextAnimationDelay: NSTimeInterval = 0.3
+private let TextAnimationDelay: TimeInterval = 0.3
 
 class TimelineFooterView: UIView {
 
@@ -20,7 +20,7 @@ class TimelineFooterView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        subtitleLabel.text = subtitleLabel.text?.uppercaseString
+        subtitleLabel.text = subtitleLabel.text?.uppercased()
         backgroundColor = .backgroundGrayColor()
     }
     
@@ -28,17 +28,18 @@ class TimelineFooterView: UIView {
     // MARK: - Animation
     
     func animate() {
-        if imageView.alpha == 0 {
-            fadeInView(titleLabel){ [weak self] completed in
-                if let strong = self where completed {
-                    strong.fadeInView(strong.imageView) { completed in
-                        if let strong = self where completed {
-                            strong.fadeInView(strong.subtitleLabel, completion: nil)
-                        }
-                    }
+        guard imageView.alpha == 0 else { return }
+
+        fadeInView(titleLabel){ completed in
+            guard completed else { return }
+
+            self.fadeInView(self.imageView) { completed in
+                if completed {
+                    self.fadeInView(self.subtitleLabel, completion: nil)
                 }
             }
         }
+
     }
-    
+
 }

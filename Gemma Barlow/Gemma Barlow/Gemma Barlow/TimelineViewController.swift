@@ -17,14 +17,16 @@ private let timelineData = [
     ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleBlueColor()]
 ]
 
-private let TimelineYearIndex = 0
-private let TimelineJobIndex = 1
-private let TimelineTitleIndex = 2
-private let TimelineLocationIndex = 3
-private let TimelineImageIndex = 4
-private let TimelineColorIndex = 5
+private enum TimelineIndex: Int {
+    case year
+    case job
+    case title
+    case location
+    case image
+    case color
+}
 
-private let TimelineEstimatedCellHeight: CGFloat = 160.0
+private let timelineEstimatedCellHeight: CGFloat = 160.0
 
 
 class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -41,7 +43,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         registerCellsAndNibs()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         tableView.flashScrollIndicators()
@@ -54,21 +56,21 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: - UITableViewDataSource
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return timelineData.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(TimelineTableViewCell.cellIdentifier, forIndexPath: indexPath) as! TimelineTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TimelineTableViewCell.cellIdentifier, for: indexPath) as! TimelineTableViewCell
 
         let data = timelineData[indexPath.row]
         
-        let year = data[TimelineYearIndex] as! String
-        let job = data[TimelineJobIndex] as! String
-        let title = data[TimelineTitleIndex] as! String
-        let location = data[TimelineLocationIndex] as! String
-        let imageName = data[TimelineImageIndex] as! String
-        let color = data[TimelineColorIndex] as! UIColor
+        let year = data[TimelineIndex.year.rawValue] as! String
+        let job = data[TimelineIndex.job.rawValue] as! String
+        let title = data[TimelineIndex.title.rawValue] as! String
+        let location = data[TimelineIndex.location.rawValue] as! String
+        let imageName = data[TimelineIndex.image.rawValue] as! String
+        let color = data[TimelineIndex.color.rawValue] as! UIColor
         
         cell.configureCellWithEmployerData(year, job: job, title: title, location: location, imageName: imageName, color: color)
         
@@ -78,7 +80,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: - UIScrollViewDelegate
 
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let bottom = scrollView.contentOffset.y + scrollView.frame.size.height - statusBarHeight() - navigationBarHeight()
         
         if floor(bottom) >= floor(scrollView.contentSize.height) {
@@ -89,53 +91,53 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: - Actions
     
-    func footerViewTapped(sender: UIView) {
+    func footerViewTapped(_ sender: UIView) {
         presentTimelineDetailsViewController()
     }
     
     
-    private func presentTimelineDetailsViewController() {
+    fileprivate func presentTimelineDetailsViewController() {
         let storyboard = UIStoryboard(name: "MoreDetails", bundle: nil)
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("MoreDetailsViewController")
-        presentViewController(viewController, animated: true, completion: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MoreDetailsViewController")
+        present(viewController, animated: true, completion: nil)
     }
     
     
     // MARK: - Other
     
-    private func setupTableView() {
+    fileprivate func setupTableView() {
         tableView.tableHeaderView = headerView
         tableView.backgroundColor = UIColor.backgroundGrayColor()
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = TimelineEstimatedCellHeight
+        tableView.estimatedRowHeight = timelineEstimatedCellHeight
         tableView.tableFooterView = footerView
     }
     
-    private func registerCellsAndNibs() {
+    fileprivate func registerCellsAndNibs() {
         let nib = UINib(nibName: TimelineTableViewCell.nibName, bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: TimelineTableViewCell.cellIdentifier)
+        tableView.register(nib, forCellReuseIdentifier: TimelineTableViewCell.cellIdentifier)
     }
     
     
     lazy var headerView: TimelineHeaderView = {
-        let bundle = NSBundle.mainBundle()
-        let finalView = bundle.loadNibNamed("TimelineHeaderView", owner: self, options: nil)[0] as! TimelineHeaderView
+        let bundle = Bundle.main
+        let finalView = bundle.loadNibNamed("TimelineHeaderView", owner: self, options: nil)?[0] as! TimelineHeaderView
         
-        let tap = UITapGestureRecognizer(target: self, action: Selector("headerViewTapped:"))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(TimelineViewController.headerViewTapped(_:)))
         finalView.addGestureRecognizer(tap)
         
         return finalView
     }()
     
-    func headerViewTapped(sender: UIView) {
+    func headerViewTapped(_ sender: UIView) {
         // GB - To be continued
     }
     
     lazy var footerView: TimelineFooterView = {
-        let bundle = NSBundle.mainBundle()
-        let finalView = bundle.loadNibNamed("TimelineFooterView", owner: self, options: nil)[0] as! TimelineFooterView
+        let bundle = Bundle.main
+        let finalView = bundle.loadNibNamed("TimelineFooterView", owner: self, options: nil)?[0] as! TimelineFooterView
         
-        let tap = UITapGestureRecognizer(target: self, action: Selector("footerViewTapped:"))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(TimelineViewController.footerViewTapped(_:)))
         finalView.addGestureRecognizer(tap)
             
         return finalView

@@ -8,21 +8,22 @@
 
 import UIKit
 
+enum Alpha: CGFloat {
+    case show = 1.0
+    case hide = 0.0
+}
 
-let ShowViewAlpha: CGFloat = 1.0
-let HideViewAlpha: CGFloat = 0.0
-
-private let FadeAnimationDuration: NSTimeInterval = 0.3
+private let fadeAnimationDuration: TimeInterval = 0.3
 
 extension UIView {
     
     // MARK: - Animation
     
-    func fadeInView(view: UIView, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void)?) {
-        view.alpha = HideViewAlpha
+    func fadeInView(_ view: UIView, delay: TimeInterval = 0.0, completion: ((Bool) -> Void)?) {
+        view.alpha = Alpha.hide.rawValue
         
-        UIView.animateWithDuration(FadeAnimationDuration, delay: delay, options: .CurveEaseIn, animations: {
-            view.alpha = ShowViewAlpha
+        UIView.animate(withDuration: fadeAnimationDuration, delay: delay, options: .curveEaseIn, animations: {
+            view.alpha = Alpha.show.rawValue
         }, completion: completion)
     }
 }

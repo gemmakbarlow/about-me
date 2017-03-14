@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let EmployerImageViewCornerRadius: CGFloat = 8.0
+private let employerImageViewCornerRadius: CGFloat = 8.0
 
 class TimelineTableViewCell: UITableViewCell {
 
@@ -29,7 +29,7 @@ class TimelineTableViewCell: UITableViewCell {
     
     // MARK: - Configuration
     
-    func configureCellWithEmployerData(year: String, job: String, title: String, location: String, imageName: String, color: UIColor) {
+    func configureCellWithEmployerData(_ year: String, job: String, title: String, location: String, imageName: String, color: UIColor) {
         setupEmployerImageView(imageName)
         setupTextLabels(title, year: year, location: location, job: job)
         
@@ -39,13 +39,13 @@ class TimelineTableViewCell: UITableViewCell {
     
     // MARK: - Setup
     
-    private func setupEmployerImageView(imageName: String) {
+    fileprivate func setupEmployerImageView(_ imageName: String) {
         employerImageView.image = UIImage(named: imageName)
-        employerImageView.layer.cornerRadius = EmployerImageViewCornerRadius
+        employerImageView.layer.cornerRadius = employerImageViewCornerRadius
         employerImageView.clipsToBounds = true
     }
     
-    private func setupTextLabels(title: String, year: String, location: String, job: String) {
+    fileprivate func setupTextLabels(_ title: String, year: String, location: String, job: String) {
         jobLabel.text = job
         employerTitleLabel.text = title
         yearLabel.text = year
@@ -63,7 +63,7 @@ class TimelineTableViewCell: UITableViewCell {
         return classAsString
     }
     
-    private class var classAsString: String {
+    fileprivate class var classAsString: String {
        return NSStringFromClass(self).truncatePriorToChar(".")
     }
 
