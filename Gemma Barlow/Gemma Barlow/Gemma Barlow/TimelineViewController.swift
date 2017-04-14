@@ -11,7 +11,8 @@ import UIKit
 // MARK: - Data
 
 private let data = [
-    ["2014 -", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
+	["2017 -", "Engineering Manager (Mobile)", "Etsy", "Brooklyn, New York", "etsy", UIColor.paleBlueColor()],
+    ["2014", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
     ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.paleBlueColor()],
     ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.tealColor()],
     ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleBlueColor()]
@@ -129,7 +130,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     private func setupTableView() {
         tableView.tableHeaderView = headerView
-        tableView.backgroundColor = UIColor.backgroundGrayColor()
+        tableView.backgroundColor = .backgroundGrayColor()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = timelineEstimatedCellHeight
         tableView.tableFooterView = footerView
