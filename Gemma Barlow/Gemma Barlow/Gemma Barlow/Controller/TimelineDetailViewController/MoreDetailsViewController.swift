@@ -54,20 +54,20 @@ class MoreDetailsViewController: UIViewController {
     
     // MARK: - Setup
     
-    fileprivate func setupCloseButton() {
+    private func setupCloseButton() {
         closeButton.setTitleColor(.tealColor(), for: UIControlState())
     }
     
-    fileprivate func setupRandomFactTitleLabel() {
+    private func setupRandomFactTitleLabel() {
         randomFactTitleButton.setTitleColor(.tealColor(), for: UIControlState())
     }
     
-    fileprivate func setupRandomFactLabel() {
+    private func setupRandomFactLabel() {
         randomFactLabel.alpha = Alpha.hide.rawValue
         randomFactLabel.textColor = .white
     }
     
-    fileprivate func setupMadeWithLoveLabel() {
+    private func setupMadeWithLoveLabel() {
         madeWithLoveLabel.textColor = .paleBlueColor()
     }
     
@@ -111,7 +111,7 @@ class MoreDetailsViewController: UIViewController {
         openURL(site)
     }
     
-    fileprivate func openURL(_ url: URL?) {
+    private func openURL(_ url: URL?) {
         guard let url = url else { return }
         UIApplication.shared.openURL(url)
     }
