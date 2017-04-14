@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,14 +50,8 @@
                                     <action selector="revealFactTappedWithSender:" destination="HBp-zJ-gbo" eventType="touchUpInside" id="91s-Ph-wZE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossed-fingers" translatesAutoresizingMaskIntoConstraints="NO" id="naS-IN-52z">
-                                <rect key="frame" x="259" y="567" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="naS-IN-52z" secondAttribute="height" multiplier="1:1" id="CRy-lV-Ubj"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Made with ♡ for WWDC 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-u9-a98" userLabel="Made with Love Label">
-                                <rect key="frame" x="102.5" y="629" width="148.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Made with ♡ for WWDC '15. Last updated April '17. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-u9-a98" userLabel="Made with Love Label">
+                                <rect key="frame" x="10" y="629" width="355" height="18"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -125,17 +118,15 @@
                             <constraint firstItem="by9-7d-hi5" firstAttribute="top" secondItem="HNK-u9-a98" secondAttribute="bottom" constant="20" id="7vF-5W-ghC"/>
                             <constraint firstItem="HNK-u9-a98" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xPh-IX-VhW" secondAttribute="bottom" constant="10" id="CVs-dF-JMN"/>
                             <constraint firstItem="s20-ir-KeM" firstAttribute="centerX" secondItem="xPh-IX-VhW" secondAttribute="centerX" id="EJh-eV-doW"/>
-                            <constraint firstItem="naS-IN-52z" firstAttribute="leading" secondItem="HNK-u9-a98" secondAttribute="trailing" constant="8" id="FXY-KD-JKK"/>
                             <constraint firstItem="s20-ir-KeM" firstAttribute="centerX" secondItem="2FQ-iT-tc0" secondAttribute="centerX" id="GzI-UG-exO"/>
                             <constraint firstItem="xPh-IX-VhW" firstAttribute="leading" secondItem="2FQ-iT-tc0" secondAttribute="leadingMargin" constant="10" id="IzI-zi-coB"/>
+                            <constraint firstAttribute="trailing" secondItem="HNK-u9-a98" secondAttribute="trailing" constant="10" id="MVC-MB-HDl"/>
                             <constraint firstItem="MCh-AB-IR6" firstAttribute="top" secondItem="qfl-O8-pJR" secondAttribute="bottom" id="NXS-hh-gpc"/>
                             <constraint firstItem="xPh-IX-VhW" firstAttribute="trailing" secondItem="paQ-9I-sYU" secondAttribute="trailing" id="PRp-Mr-mLp"/>
                             <constraint firstItem="Hgb-9v-rQO" firstAttribute="top" secondItem="qfl-O8-pJR" secondAttribute="bottom" constant="10" id="VgR-8w-u0C"/>
-                            <constraint firstItem="HNK-u9-a98" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2FQ-iT-tc0" secondAttribute="leadingMargin" constant="10" id="W2Y-Gb-a71"/>
+                            <constraint firstItem="HNK-u9-a98" firstAttribute="leading" secondItem="2FQ-iT-tc0" secondAttribute="leading" constant="10" id="XOf-Yl-szm"/>
                             <constraint firstAttribute="centerX" secondItem="HNK-u9-a98" secondAttribute="centerX" id="bCS-MV-rQO"/>
                             <constraint firstItem="xPh-IX-VhW" firstAttribute="top" secondItem="s20-ir-KeM" secondAttribute="bottom" constant="8" id="fRz-h7-atk"/>
-                            <constraint firstItem="naS-IN-52z" firstAttribute="trailing" secondItem="2FQ-iT-tc0" secondAttribute="trailingMargin" id="fVF-sN-cxN"/>
-                            <constraint firstItem="by9-7d-hi5" firstAttribute="top" secondItem="naS-IN-52z" secondAttribute="bottom" id="imB-iu-D0g"/>
                             <constraint firstItem="xPh-IX-VhW" firstAttribute="leading" secondItem="paQ-9I-sYU" secondAttribute="leading" id="kFT-84-dLD"/>
                             <constraint firstItem="MCh-AB-IR6" firstAttribute="centerX" secondItem="2FQ-iT-tc0" secondAttribute="centerX" id="vOe-N4-fXp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xPh-IX-VhW" secondAttribute="trailing" constant="10" id="wYZ-k6-AqT"/>
@@ -169,7 +160,4 @@
             <point key="canvasLocation" x="120" y="389"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="crossed-fingers" width="100" height="100"/>
-    </resources>
 </document>

@@ -15,7 +15,7 @@ private let randomFactData = [
     "Gem once received an app for Valentine's Day; it contained puzzles that revealed cheesy ♡-cartoons. #developerdating",
     "Gem shares a name with the most badass character in Sons of Anarchy.",
     "Gemma has found three bugs in her iOS code whilst dreaming; her subconscious frightens her sometimes.",
-    "Gemma wrote the Harry's App entirely in Swift starting at v1.1",
+    "Gemma wrote the Harry's App entirely in Swift, starting at v1.1",
     "At her first WWDC, Gem queued for The Keynote just a few spots behind Johns Siracusa and Gruber.",
     "Gem couldn't apply for a ticket in 2014 as her little sis scheduled her wedding for June 08 *sigh*"
 ]
