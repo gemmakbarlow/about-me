@@ -28,9 +28,13 @@ class TimelineTableViewCell: UITableViewCell {
     
     
     // MARK: - Configuration
-    
-    func configureCellWithEmployerData(_ year: String, job: String, title: String, location: String, imageName: String, color: UIColor) {
-        setupEmployerImageView(imageName)
+	
+	func configure(with item: TimelineItem) {
+		return configureCellWithEmployerData(year: item.year, job: item.job, title: item.title, location: item.location, image: item.image, color: item.color)
+	}
+	
+    private func configureCellWithEmployerData(year: String, job: String, title: String, location: String, image: UIImage?, color: UIColor) {
+        setupEmployerImage(image: image)
         setupTextLabels(title, year: year, location: location, job: job)
         
         contentView.backgroundColor = color
@@ -39,13 +43,13 @@ class TimelineTableViewCell: UITableViewCell {
     
     // MARK: - Setup
     
-    fileprivate func setupEmployerImageView(_ imageName: String) {
-        employerImageView.image = UIImage(named: imageName)
+    private func setupEmployerImage(image: UIImage?) {
+        employerImageView.image = image
         employerImageView.layer.cornerRadius = employerImageViewCornerRadius
         employerImageView.clipsToBounds = true
     }
     
-    fileprivate func setupTextLabels(_ title: String, year: String, location: String, job: String) {
+    private func setupTextLabels(_ title: String, year: String, location: String, job: String) {
         jobLabel.text = job
         employerTitleLabel.text = title
         yearLabel.text = year
@@ -63,7 +67,7 @@ class TimelineTableViewCell: UITableViewCell {
         return classAsString
     }
     
-    fileprivate class var classAsString: String {
+    private class var classAsString: String {
        return NSStringFromClass(self).truncatePriorToChar(".")
     }
 

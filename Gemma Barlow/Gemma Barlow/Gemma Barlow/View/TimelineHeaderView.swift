@@ -46,7 +46,7 @@ class TimelineHeaderView: UIView {
     
     // MARK: - Animation
     
-    fileprivate func springUpView(_ view: NSLayoutConstraint, completion: ((Bool) -> Void)?) {
+    private func springUpView(_ view: NSLayoutConstraint, completion: ((Bool) -> Void)?) {
         imagePositionConstraint.constant = 0.0
         imageView.setNeedsUpdateConstraints()
         

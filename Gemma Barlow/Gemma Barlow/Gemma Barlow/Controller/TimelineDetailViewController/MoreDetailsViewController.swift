@@ -13,9 +13,9 @@ import UIKit
 private let randomFactData = [
     "At the 2011 WWDC Bash, Michael Franti gave Gem his guitar pick. She has it framed in her bedroom.",
     "Gem once received an app for Valentine's Day; it contained puzzles that revealed cheesy ♡-cartoons. #developerdating",
-    "Gem shares a name with the most badass character in Sons of Anarchy (and secretly loves it).",
+    "Gem shares a name with the most badass character in Sons of Anarchy.",
     "Gemma has found three bugs in her iOS code whilst dreaming; her subconscious frightens her sometimes.",
-    "Gemma is writing the Harry's App entirely in Swift.",
+    "Gemma wrote the Harry's App entirely in Swift, starting at v1.1",
     "At her first WWDC, Gem queued for The Keynote just a few spots behind Johns Siracusa and Gruber.",
     "Gem couldn't apply for a ticket in 2014 as her little sis scheduled her wedding for June 08 *sigh*"
 ]
@@ -54,26 +54,26 @@ class MoreDetailsViewController: UIViewController {
     
     // MARK: - Setup
     
-    fileprivate func setupCloseButton() {
+    private func setupCloseButton() {
         closeButton.setTitleColor(.tealColor(), for: UIControlState())
     }
     
-    fileprivate func setupRandomFactTitleLabel() {
+    private func setupRandomFactTitleLabel() {
         randomFactTitleButton.setTitleColor(.tealColor(), for: UIControlState())
     }
     
-    fileprivate func setupRandomFactLabel() {
+    private func setupRandomFactLabel() {
         randomFactLabel.alpha = Alpha.hide.rawValue
         randomFactLabel.textColor = .white
     }
     
-    fileprivate func setupMadeWithLoveLabel() {
+    private func setupMadeWithLoveLabel() {
         madeWithLoveLabel.textColor = .paleBlueColor()
     }
     
     // MARK: - Action
     
-    @IBAction func revealFactTapped(_ sender: UIButton) {
+    @IBAction func revealFactTapped(sender: UIButton) {
         let randomIndex = Int(arc4random_uniform(UInt32(randomFactData.count)))
         randomFactLabel.text = randomFactData[randomIndex]
         randomFactLabel.alpha = Alpha.hide.rawValue
@@ -87,31 +87,31 @@ class MoreDetailsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func closeButtonTapped(_ sender: UIButton) {
+    @IBAction func closeButtonTapped(sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func twitterTapped(_ sender: UIButton) {
+    @IBAction func twitterTapped(sender: UIButton) {
         let twitterURL = URL(string: twitterProfile)
-        openURL(twitterURL)
+        openURL(url: twitterURL)
     }
     
-    @IBAction func linkedInTapped(_ sender: UIButton) {
+    @IBAction func linkedInTapped(sender: UIButton) {
         let linkedInURL = URL(string: linkedInProfile)
-        openURL(linkedInURL)
+		openURL(url: linkedInURL)
     }
     
-    @IBAction func githubTapped(_ sender: UIButton) {
+	@IBAction func githubTapped(sender: UIButton) {
         let githubURL = URL(string: githubProfile)
-        openURL(githubURL)
+		openURL(url: githubURL)
     }
     
-    @IBAction func personalWebsiteTapped(_ sender: UIButton) {
+    @IBAction func personalWebsiteTapped(sender: UIButton) {
         let site = URL(string: personalSite)
-        openURL(site)
+		openURL(url: site)
     }
     
-    fileprivate func openURL(_ url: URL?) {
+    private func openURL(url: URL?) {
         guard let url = url else { return }
         UIApplication.shared.openURL(url)
     }
