@@ -11,7 +11,7 @@ import UIKit
 // MARK: - Data
 
 private let data = [
-	["2017 -", "Engineering Manager (Mobile)", "Etsy", "Brooklyn, New York", "etsy", UIColor.paleBlueColor()],
+    ["2017 -", "Engineering Manager (Mobile)", "Etsy", "Brooklyn, New York", "etsy", UIColor.paleBlueColor()],
     ["2014", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
     ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.paleBlueColor()],
     ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.tealColor()],
@@ -28,43 +28,43 @@ private enum TimelineIndex: Int {
 }
 
 struct TimelineItem {
-	var year: String
-	var title: String
-	var job: String
-	var location: String
-	var image: UIImage?
-	var color: UIColor
-	
-	init(year: String, title: String, job: String, location: String, imageName: String, color: UIColor) {
-		self.year = year
-		self.title = title
-		self.job = job
-		self.location = location
-		self.image = UIImage(named: imageName)
-		self.color = color
-	}
+    var year: String
+    var title: String
+    var job: String
+    var location: String
+    var image: UIImage?
+    var color: UIColor
+    
+    init(year: String, title: String, job: String, location: String, imageName: String, color: UIColor) {
+        self.year = year
+        self.title = title
+        self.job = job
+        self.location = location
+        self.image = UIImage(named: imageName)
+        self.color = color
+    }
 }
 
 private let timelineEstimatedCellHeight: CGFloat = 160.0
 
 
 class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
-
-	private lazy var timelineData: [TimelineItem] = {
-		return data.map { dataItem in
-			let year = dataItem[TimelineIndex.year.rawValue] as! String
-			let job = dataItem[TimelineIndex.job.rawValue] as! String
-			let title = dataItem[TimelineIndex.title.rawValue] as! String
-			let location = dataItem[TimelineIndex.location.rawValue] as! String
-			let imageName = dataItem[TimelineIndex.image.rawValue] as! String
-			let color = dataItem[TimelineIndex.color.rawValue] as! UIColor
-			
-			return TimelineItem(year: year, title: title, job: job, location: location, imageName: imageName, color: color)
-		}
-	}()
-	
+    
+    private lazy var timelineData: [TimelineItem] = {
+        return data.map { dataItem in
+            let year = dataItem[TimelineIndex.year.rawValue] as! String
+            let job = dataItem[TimelineIndex.job.rawValue] as! String
+            let title = dataItem[TimelineIndex.title.rawValue] as! String
+            let location = dataItem[TimelineIndex.location.rawValue] as! String
+            let imageName = dataItem[TimelineIndex.image.rawValue] as! String
+            let color = dataItem[TimelineIndex.color.rawValue] as! UIColor
+            
+            return TimelineItem(year: year, title: title, job: job, location: location, imageName: imageName, color: color)
+        }
+    }()
+    
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {
@@ -76,10 +76,10 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+        
         tableView.flashScrollIndicators()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -92,17 +92,17 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let empty = UITableViewCell()
-		
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: TimelineTableViewCell.cellIdentifier, for: indexPath) as? TimelineTableViewCell else { return empty }
-		cell.configure(with: timelineData[indexPath.row])
-		
+        let empty = UITableViewCell()
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TimelineTableViewCell.cellIdentifier, for: indexPath) as? TimelineTableViewCell else { return empty }
+        cell.configure(with: timelineData[indexPath.row])
+        
         return cell
     }
     
     
     // MARK: - UIScrollViewDelegate
-
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let bottom = scrollView.contentOffset.y + scrollView.frame.size.height - statusBarHeight() - navigationBarHeight()
         
@@ -114,7 +114,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: - Actions
     
-    func footerViewTapped(_ sender: UIView) {
+    @objc func footerViewTapped(_ sender: UIView) {
         presentTimelineDetailsViewController()
     }
     
@@ -152,7 +152,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         return finalView
     }()
     
-    func headerViewTapped(_ sender: UIView) {
+    @objc func headerViewTapped(_ sender: UIView) {
         // GB - To be continued
     }
     
@@ -162,7 +162,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(TimelineViewController.footerViewTapped(_:)))
         finalView.addGestureRecognizer(tap)
-            
+        
         return finalView
     }()
 }
