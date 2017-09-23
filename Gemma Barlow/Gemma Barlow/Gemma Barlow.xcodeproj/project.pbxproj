@@ -25,7 +25,7 @@
 		A7FBFCB31AE27C1E004CC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB11AE27C1E004CC664 /* Main.storyboard */; };
 		A7FBFCB51AE27C1E004CC664 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB41AE27C1E004CC664 /* Images.xcassets */; };
 		A7FBFCB81AE27C1E004CC664 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB61AE27C1E004CC664 /* LaunchScreen.xib */; };
-		A7FBFCC41AE27C1E004CC664 /* Gemma_BarlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCC31AE27C1E004CC664 /* Gemma_BarlowTests.swift */; };
+		A7FBFCC41AE27C1E004CC664 /* SubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCC31AE27C1E004CC664 /* SubstringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		A7FBFCB21AE27C1E004CC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7FBFCB41AE27C1E004CC664 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A7FBFCB71AE27C1E004CC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A7FBFCBD1AE27C1E004CC664 /* Gemma BarlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gemma BarlowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FBFCBD1AE27C1E004CC664 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FBFCC21AE27C1E004CC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7FBFCC31AE27C1E004CC664 /* Gemma_BarlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gemma_BarlowTests.swift; sourceTree = "<group>"; };
+		A7FBFCC31AE27C1E004CC664 /* SubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FBFCAA1AE27C1E004CC664 /* Gemma Barlow */,
-				A7FBFCC01AE27C1E004CC664 /* Gemma BarlowTests */,
+				A7FBFCC01AE27C1E004CC664 /* Unit Tests */,
 				A7FBFCA91AE27C1E004CC664 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */,
-				A7FBFCBD1AE27C1E004CC664 /* Gemma BarlowTests.xctest */,
+				A7FBFCBD1AE27C1E004CC664 /* Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,13 +196,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A7FBFCC01AE27C1E004CC664 /* Gemma BarlowTests */ = {
+		A7FBFCC01AE27C1E004CC664 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A7FBFCC31AE27C1E004CC664 /* Gemma_BarlowTests.swift */,
+				A7FBFCC31AE27C1E004CC664 /* SubstringTests.swift */,
 				A7FBFCC11AE27C1E004CC664 /* Supporting Files */,
 			);
-			path = "Gemma BarlowTests";
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
 		A7FBFCC11AE27C1E004CC664 /* Supporting Files */ = {
@@ -233,9 +233,9 @@
 			productReference = A7FBFCA81AE27C1E004CC664 /* Gemma Barlow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A7FBFCBC1AE27C1E004CC664 /* Gemma BarlowTests */ = {
+		A7FBFCBC1AE27C1E004CC664 /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7FBFCCA1AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma BarlowTests" */;
+			buildConfigurationList = A7FBFCCA1AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
 				A7FBFCB91AE27C1E004CC664 /* Sources */,
 				A7FBFCBA1AE27C1E004CC664 /* Frameworks */,
@@ -246,9 +246,9 @@
 			dependencies = (
 				A7FBFCBF1AE27C1E004CC664 /* PBXTargetDependency */,
 			);
-			name = "Gemma BarlowTests";
+			name = "Unit Tests";
 			productName = "Gemma BarlowTests";
-			productReference = A7FBFCBD1AE27C1E004CC664 /* Gemma BarlowTests.xctest */;
+			productReference = A7FBFCBD1AE27C1E004CC664 /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -286,7 +286,7 @@
 			projectRoot = "";
 			targets = (
 				A7FBFCA71AE27C1E004CC664 /* Gemma Barlow */,
-				A7FBFCBC1AE27C1E004CC664 /* Gemma BarlowTests */,
+				A7FBFCBC1AE27C1E004CC664 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C4F2FE1AE8716F00A527C0 /* UIViewController+Extensions.swift in Sources */,
-				A7FBFCC41AE27C1E004CC664 /* Gemma_BarlowTests.swift in Sources */,
+				A7FBFCC41AE27C1E004CC664 /* SubstringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +494,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Gemma BarlowTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemmakbarlow.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,7 +507,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Gemma BarlowTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemmakbarlow.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7FBFCCA1AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma BarlowTests" */ = {
+		A7FBFCCA1AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7FBFCCB1AE27C1E004CC664 /* Debug */,
