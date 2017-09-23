@@ -68,7 +68,7 @@ class TimelineTableViewCell: UITableViewCell {
     }
     
     private class var classAsString: String {
-       return NSStringFromClass(self).truncatePriorToChar(".")
+       return NSStringFromClass(self).truncatePriorToAndIncludingChar(".")
     }
 
 }
