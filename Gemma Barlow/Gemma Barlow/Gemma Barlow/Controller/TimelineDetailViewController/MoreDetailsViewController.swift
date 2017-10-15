@@ -113,6 +113,6 @@ class MoreDetailsViewController: UIViewController {
     
     private func openURL(url: URL?) {
         guard let url = url else { return }
-        UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url, completionHandler: nil)
     }
 }
