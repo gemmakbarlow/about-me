@@ -70,6 +70,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view?.backgroundColor = .backgroundGrayColor()
         setupTableView()
         registerCellsAndNibs()
     }
