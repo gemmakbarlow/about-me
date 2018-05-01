@@ -28,12 +28,12 @@ private enum TimelineIndex: Int {
 }
 
 struct TimelineItem {
-    var year: String
-    var title: String
-    var job: String
-    var location: String
-    var image: UIImage?
-    var color: UIColor
+    let year: String
+    let title: String
+    let job: String
+    let location: String
+    let image: UIImage?
+    let color: UIColor
     
     init(year: String, title: String, job: String, location: String, imageName: String, color: UIColor) {
         self.year = year
