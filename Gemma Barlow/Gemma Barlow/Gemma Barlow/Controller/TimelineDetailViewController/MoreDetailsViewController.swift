@@ -55,11 +55,11 @@ class MoreDetailsViewController: UIViewController {
     // MARK: - Setup
     
     private func setupCloseButton() {
-        closeButton.setTitleColor(.tealColor(), for: UIControlState())
+        closeButton.setTitleColor(.tealColor(), for: UIControl.State())
     }
     
     private func setupRandomFactTitleLabel() {
-        randomFactTitleButton.setTitleColor(.tealColor(), for: UIControlState())
+        randomFactTitleButton.setTitleColor(.tealColor(), for: UIControl.State())
     }
     
     private func setupRandomFactLabel() {

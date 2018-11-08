@@ -132,7 +132,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     private func setupTableView() {
         tableView.tableHeaderView = headerView
         tableView.backgroundColor = .backgroundGrayColor()
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = timelineEstimatedCellHeight
         tableView.tableFooterView = footerView
     }
