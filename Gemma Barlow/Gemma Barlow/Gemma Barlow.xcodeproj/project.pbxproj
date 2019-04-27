@@ -301,6 +301,7 @@
 				TargetAttributes = {
 					A7FBFCA71AE27C1E004CC664 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 93DW7Y5G9U;
 						LastSwiftMigration = 1020;
 					};
 					A7FBFCBC1AE27C1E004CC664 = {
@@ -558,6 +559,7 @@
 			baseConfigurationReference = 87F91F091F93C16800392F94 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 93DW7Y5G9U;
 				INFOPLIST_FILE = "Gemma Barlow/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemmakbarlow.$(PRODUCT_NAME:rfc1034identifier)";
@@ -572,6 +574,7 @@
 			baseConfigurationReference = 87F91F0A1F93C16800392F94 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 93DW7Y5G9U;
 				INFOPLIST_FILE = "Gemma Barlow/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemmakbarlow.$(PRODUCT_NAME:rfc1034identifier)";
