@@ -313,10 +313,9 @@
 			};
 			buildConfigurationList = A7FBFCA31AE27C1E004CC664 /* Build configuration list for PBXProject "Gemma Barlow" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
