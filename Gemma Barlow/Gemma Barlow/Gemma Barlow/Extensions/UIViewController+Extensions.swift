@@ -20,7 +20,6 @@ extension UIViewController {
     }
     
     func statusBarHeight() -> CGFloat {
-        return UIApplication.shared.statusBarFrame.size.height
+        return view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0
     }
-    
 }
