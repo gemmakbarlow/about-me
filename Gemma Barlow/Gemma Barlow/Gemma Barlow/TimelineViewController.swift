@@ -11,7 +11,7 @@ import UIKit
 // MARK: - Data
 
 private let data = [
-    ["2019 - ", "iOS Engineer", "[Coming Soon]", "New York, New York", "", UIColor.tealColor()],
+    ["2019 - ", "iOS Engineer", "Radar", "New York, New York", "radar", UIColor.tealColor()],
     ["2017", "Senior Engineering Manager (Mobile)", "Etsy", "Brooklyn, New York", "etsy", UIColor.paleBlueColor()],
     ["2014", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
     ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.paleBlueColor()],
