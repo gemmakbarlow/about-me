@@ -556,7 +556,7 @@
 		};
 		A7FBFCC81AE27C1E004CC664 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87F91F091F93C16800392F94 /* Debug.xcconfig */;
+			baseConfigurationReference = 101662F3008BD6313AD66423 /* Pods-Gemma Barlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93DW7Y5G9U;
@@ -571,7 +571,7 @@
 		};
 		A7FBFCC91AE27C1E004CC664 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87F91F0A1F93C16800392F94 /* Release.xcconfig */;
+			baseConfigurationReference = 1B88C06136EA1D5C25642A39 /* Pods-Gemma Barlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93DW7Y5G9U;
