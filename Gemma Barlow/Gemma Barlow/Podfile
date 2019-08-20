@@ -1,8 +1,8 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '13.0'
 
 target 'Gemma Barlow' do
   use_frameworks!
-  pod 'Fabric', '1.6.3'
-  pod 'Answers', '1.3.6'
+  pod 'Fabric', '1.10.2'
+  pod 'Answers', '1.4.1'
 end

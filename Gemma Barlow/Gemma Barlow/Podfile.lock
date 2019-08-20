@@ -1,11 +1,11 @@
 PODS:
-  - Answers (1.3.6):
-    - Fabric (~> 1.6.3)
-  - Fabric (1.6.3)
+  - Answers (1.4.1):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
 
 DEPENDENCIES:
-  - Answers (= 1.3.6)
-  - Fabric (= 1.6.3)
+  - Answers (= 1.4.1)
+  - Fabric (= 1.10.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -13,9 +13,9 @@ SPEC REPOS:
     - Fabric
 
 SPEC CHECKSUMS:
-  Answers: ef6af16bc75366334db6323a87f37ea54e2dab71
-  Fabric: cbe0ca6c9531bba17910052f6f105fcbc5fa7f67
+  Answers: 7d5ff1f77fea900eb75032b37b4288482b824055
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
 
-PODFILE CHECKSUM: 75cde8f00c38f53392b6af9aef11fa94abb20a34
+PODFILE CHECKSUM: 68994c01d334ccca3f55c2d6e17ea21f4230ec22
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.7.5
