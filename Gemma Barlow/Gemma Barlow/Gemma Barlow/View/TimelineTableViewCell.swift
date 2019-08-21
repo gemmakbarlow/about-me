@@ -37,7 +37,7 @@ class TimelineTableViewCell: UITableViewCell {
         setupEmployerImage(image: image)
         setupTextLabels(title, year: year, location: location, job: job)
         
-        contentView.backgroundColor = color
+        backgroundColor = color
         timelineView.backgroundColor = .backgroundGrayColor()
     }
     
