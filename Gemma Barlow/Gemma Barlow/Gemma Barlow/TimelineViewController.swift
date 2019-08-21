@@ -11,12 +11,12 @@ import UIKit
 // MARK: - Data
 
 private let data = [
-    ["2019 - ", "iOS Engineer", "Radar", "New York, New York", "radar", UIColor.tealColor()],
-    ["2017", "Senior Engineering Manager (Mobile)", "Etsy", "Brooklyn, New York", "etsy", UIColor.paleBlueColor()],
-    ["2014", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor()],
-    ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.paleBlueColor()],
-    ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.tealColor()],
-    ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria (Australia)", "westfield", UIColor.paleBlueColor()]
+    ["2019 - ", "iOS Engineer", "Radar", "New York, New York", "radar", UIColor.tealColor(), "https://goradar.com"],
+    ["2017", "Senior Engineering Manager (Mobile)", "Etsy", "Brooklyn, New York", "etsy", UIColor.paleBlueColor(), "https://etsy.com/mobile"],
+    ["2014", "iOS Team Lead", "Harry's", "New York, New York", "harrys", UIColor.tealColor(), "https://harrys.com"],
+    ["2013", "Mobile Team Lead", "Couchsurfing", "San Francisco, California", "couchsurfing", UIColor.paleBlueColor(), "https://couchsurfing.com/mobile"],
+    ["2011", "Senior iOS Developer", "Lonely Planet - BBC", "Oakland, California", "lonely-planet", UIColor.tealColor(), "https://lonelyplanet.com"],
+    ["2009", "iOS Developer", "Intunity", "Melbourne, Victoria, Australia", "westfield", UIColor.paleBlueColor(), "https://westfield.com.au"]
 ]
 
 private enum TimelineIndex: Int {
@@ -26,6 +26,7 @@ private enum TimelineIndex: Int {
     case location
     case image
     case color
+    case url
 }
 
 struct TimelineItem {
@@ -35,14 +36,16 @@ struct TimelineItem {
     let location: String
     let image: UIImage?
     let color: UIColor
+    let url: URL?
     
-    init(year: String, title: String, job: String, location: String, imageName: String, color: UIColor) {
+    init(year: String, title: String, job: String, location: String, imageName: String, color: UIColor, urlString: String) {
         self.year = year
         self.title = title
         self.job = job
         self.location = location
         self.image = UIImage(named: imageName)
         self.color = color
+        self.url = URL(string: urlString)
     }
 }
 
@@ -61,8 +64,9 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
             let location = dataItem[TimelineIndex.location.rawValue] as! String
             let imageName = dataItem[TimelineIndex.image.rawValue] as! String
             let color = dataItem[TimelineIndex.color.rawValue] as! UIColor
+            let urlString = dataItem[TimelineIndex.url.rawValue] as! String
             
-            return TimelineItem(year: year, title: title, job: job, location: location, imageName: imageName, color: color)
+            return TimelineItem(year: year, title: title, job: job, location: location, imageName: imageName, color: color, urlString: urlString)
         }
     }()
     
@@ -81,12 +85,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableView.flashScrollIndicators()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
+
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -102,6 +101,14 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = timelineData[indexPath.row]
+        guard let url = data.url else { return }
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     
     // MARK: - UIScrollViewDelegate
     
