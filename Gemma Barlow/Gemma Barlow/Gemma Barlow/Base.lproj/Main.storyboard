@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,10 +11,6 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="TimelineViewController" customModule="Gemma_Barlow" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -29,23 +26,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="s5x-q7-axm" secondAttribute="trailing" id="4QP-dG-Tbe"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="s5x-q7-axm" secondAttribute="bottom" id="7D4-7d-6Cp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s5x-q7-axm" secondAttribute="trailing" constant="-16" id="K11-x5-qPF"/>
-                            <constraint firstItem="s5x-q7-axm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Otd-Me-hMs"/>
-                            <constraint firstItem="s5x-q7-axm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Yaq-xN-vUq"/>
-                            <constraint firstItem="s5x-q7-axm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="eno-Ng-bUY"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="s5x-q7-axm" secondAttribute="bottom" id="knh-08-7Zn"/>
-                            <constraint firstItem="s5x-q7-axm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="r6e-5Z-BUi"/>
+                            <constraint firstItem="s5x-q7-axm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3bL-rq-5Oi"/>
+                            <constraint firstItem="s5x-q7-axm" firstAttribute="top" secondItem="cZd-PC-xcx" secondAttribute="top" id="I62-08-mNm"/>
+                            <constraint firstItem="s5x-q7-axm" firstAttribute="bottom" secondItem="cZd-PC-xcx" secondAttribute="bottom" id="XcB-vi-M13"/>
+                            <constraint firstItem="s5x-q7-axm" firstAttribute="leading" secondItem="cZd-PC-xcx" secondAttribute="leading" id="zth-RJ-uYf"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="K11-x5-qPF"/>
-                                <exclude reference="Yaq-xN-vUq"/>
-                                <exclude reference="r6e-5Z-BUi"/>
-                                <exclude reference="7D4-7d-6Cp"/>
-                            </mask>
-                        </variation>
+                        <viewLayoutGuide key="safeArea" id="cZd-PC-xcx"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="s5x-q7-axm" id="Uex-OO-gfV"/>
