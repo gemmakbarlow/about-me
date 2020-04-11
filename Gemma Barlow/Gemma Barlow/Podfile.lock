@@ -8,7 +8,7 @@ DEPENDENCIES:
   - Fabric (= 1.10.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Answers
     - Fabric
 
@@ -18,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 68994c01d334ccca3f55c2d6e17ea21f4230ec22
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1
