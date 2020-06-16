@@ -26,7 +26,6 @@
 		A7FBFCB51AE27C1E004CC664 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB41AE27C1E004CC664 /* Images.xcassets */; };
 		A7FBFCB81AE27C1E004CC664 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7FBFCB61AE27C1E004CC664 /* LaunchScreen.xib */; };
 		A7FBFCC41AE27C1E004CC664 /* SubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBFCC31AE27C1E004CC664 /* SubstringTests.swift */; };
-		CE719CD43C92D51088631F66 /* Pods_Gemma_Barlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E517F8299B6C762416FE6F1 /* Pods_Gemma_Barlow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		101662F3008BD6313AD66423 /* Pods-Gemma Barlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gemma Barlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gemma Barlow/Pods-Gemma Barlow.debug.xcconfig"; sourceTree = "<group>"; };
-		1B88C06136EA1D5C25642A39 /* Pods-Gemma Barlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gemma Barlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gemma Barlow/Pods-Gemma Barlow.release.xcconfig"; sourceTree = "<group>"; };
-		8E517F8299B6C762416FE6F1 /* Pods_Gemma_Barlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gemma_Barlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70639AC1AE7219A0024B13D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A7594FCA1AE8753F00A9C819 /* MoreDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreDetails.storyboard; path = Controller/TimelineDetailViewController/MoreDetails.storyboard; sourceTree = "<group>"; };
 		A7594FCB1AE8753F00A9C819 /* MoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = MoreDetailsViewController.swift; path = Controller/TimelineDetailViewController/MoreDetailsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		A76BE9F5230C022D003F1629 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Config/Debug.xcconfig; sourceTree = "<group>"; };
-		A76BE9FB230C0417003F1629 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Config/Release.xcconfig; sourceTree = "<group>"; };
 		A7C4F2FC1AE8714700A527C0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A7E73C481AE2FB9200DFB752 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimelineTableViewCell.xib; path = View/TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		A7E73C4A1AE3081C00DFB752 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineTableViewCell.swift; path = View/TimelineTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE719CD43C92D51088631F66 /* Pods_Gemma_Barlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,15 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E55FD552F22A859E683D27F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				101662F3008BD6313AD66423 /* Pods-Gemma Barlow.debug.xcconfig */,
-				1B88C06136EA1D5C25642A39 /* Pods-Gemma Barlow.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A7E73C431AE2FB0C00DFB752 /* TimelineViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +161,6 @@
 				A7FBFCAA1AE27C1E004CC664 /* Gemma Barlow */,
 				A7FBFCC01AE27C1E004CC664 /* Unit Tests */,
 				A7FBFCA91AE27C1E004CC664 /* Products */,
-				8E55FD552F22A859E683D27F /* Pods */,
-				FD9CAC5AEE3A19DA05202D06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,9 +191,7 @@
 		A7FBFCAB1AE27C1E004CC664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A76BE9FB230C0417003F1629 /* Release.xcconfig */,
 				A7FBFCAC1AE27C1E004CC664 /* Info.plist */,
-				A76BE9F5230C022D003F1629 /* Debug.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,14 +213,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FD9CAC5AEE3A19DA05202D06 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8E517F8299B6C762416FE6F1 /* Pods_Gemma_Barlow.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,7 +220,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7FBFCC71AE27C1E004CC664 /* Build configuration list for PBXNativeTarget "Gemma Barlow" */;
 			buildPhases = (
-				C9568AF1A8D63E0CD60354EF /* [CP] Check Pods Manifest.lock */,
 				A7FBFCA41AE27C1E004CC664 /* Sources */,
 				A7FBFCA51AE27C1E004CC664 /* Frameworks */,
 				A7FBFCA61AE27C1E004CC664 /* Resources */,
@@ -360,24 +331,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    \"${PODS_ROOT}/Fabric/run\" ${FABRIC_KEY} ${FABRIC_BUILD_SECRET}\nfi";
-		};
-		C9568AF1A8D63E0CD60354EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Gemma Barlow-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -547,7 +500,6 @@
 		};
 		A7FBFCC81AE27C1E004CC664 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A76BE9F5230C022D003F1629 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93DW7Y5G9U;
@@ -562,7 +514,6 @@
 		};
 		A7FBFCC91AE27C1E004CC664 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A76BE9FB230C0417003F1629 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93DW7Y5G9U;
